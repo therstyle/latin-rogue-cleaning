@@ -12,11 +12,3 @@
 </div><!-- end wrapper -->    
 	
 <?php get_footer(); ?>
-
-
-<?
-/*
-<?php $intern_thumb = get_post_meta($post->ID, 'intern-thumb', $single=true); // post image ?>
-*/
-
-?>

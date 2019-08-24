@@ -9,7 +9,7 @@ get_header();
 	<section>
     	<article>
         	<div class="about-left">
-            <img src="<? bloginfo('template_directory'); ?>/images/icons/dustpan.png" title="Why Latin Rogue Is A Clean Sweep" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/dustpan.png" title="Why Latin Rogue Is A Clean Sweep" alt="" />
             </div>
 
             <div class="about-right">
@@ -17,7 +17,7 @@ get_header();
             <h2>why latin rogue</h2>
     		<h1>is a clean sweep</h1>
             </header>
-			<? query_posts('page_id=11'); ?>
+			<?php query_posts('page_id=11'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php the_content(); ?>
             <?php endwhile; endif; wp_reset_query(); ?>
@@ -33,30 +33,30 @@ get_header();
 	<section>
     	<article class="services-summary">
         	<header><h1>Services</h1></header>
-            <? query_posts('page_id=14'); ?>
+            <?php query_posts('page_id=14'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php the_content(); ?>
             <?php endwhile; endif; wp_reset_query(); ?>
         </article>
 
         <article class="kitchen">
-            <? query_posts('page_id=16'); ?>
+            <?php query_posts('page_id=16'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <header><h2><? the_title(); ?></h2></header>
+            <header><h2><?php the_title(); ?></h2></header>
             <?php the_content(); ?>
             <?php endwhile; endif; wp_reset_query(); ?>
         </article>
 
         <article class="bathroom">
-            <? query_posts('page_id=18'); ?>
+            <?php query_posts('page_id=18'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <header><h2><? the_title(); ?></h2></header>
+            <header><h2><?php the_title(); ?></h2></header>
             <?php the_content(); ?>
             <?php endwhile; endif; wp_reset_query(); ?>
         </article>
 
         <article class="all-rooms">
-            <? query_posts('page_id=20'); ?>
+            <?php query_posts('page_id=20'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <header><h2><? the_title(); ?></h2></header>
             <?php the_content(); ?>
@@ -97,7 +97,7 @@ get_header();
             <h1>free quote</h1>
         	<h2>You're Minutes Away from a free estimate!</h2>
             </header>
-        <? query_posts('page_id=26'); ?>
+        <?php query_posts('page_id=26'); ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
         <?php endwhile; endif; wp_reset_query(); ?>

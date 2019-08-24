@@ -18,21 +18,21 @@
 
 <div class="top">
 <a name="top" id="top"></a>
-<nav class="mobile-only"><? wp_nav_menu('menu=main'); ?></nav>
+<nav class="mobile-only"><?php wp_nav_menu('menu=main'); ?></nav>
 	<header>
-    <a class="logo" href="<? bloginfo('url'); ?>" title="Click Here For A Free Quote"><img src="<? bloginfo('template_directory'); ?>/images/logo.png" alt=""></a>
-    <nav class="desktop-only"><? wp_nav_menu('menu=main'); ?></nav>
+    <a class="logo" href="<?php echo bloginfo('url'); ?>" title="Click Here For A Free Quote"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt=""></a>
+    <nav class="desktop-only"><?php wp_nav_menu('menu=main'); ?></nav>
     
-        <div class="absolute"><img src="<? bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt=""></div>
+        <div class="absolute"><img src="<?php echo bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt=""></div>
         
     	<h2>Make Your World as</h2>
         <h1>Clean As Mine</h1>
         
-        <? query_posts('page_id=9'); ?>    
+        <?php query_posts('page_id=9'); ?>    
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
         <?php endwhile; endif; wp_reset_query(); ?>
 
-		<a class="btn" href="<? bloginfo('url'); ?>/#quote">Get A Free Quote</a>
+		<a class="btn" href="<?php echo bloginfo('url'); ?>/#quote">Get A Free Quote</a>
     </header>
 </div>
