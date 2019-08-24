@@ -70,7 +70,6 @@ get_header();
             </div>
         </div>
 
-        <!--<a class="click" href="#quote" title="Click Here For An Online Quote"></a>-->
         <div class="quotes">
         	<div>
             <p>Latin Rogue Cleaning is, without a doubt, the most responsive cleaning service I have ever used in all my years of property and facilities management services. They respond quickly unlike many of their competitors and the service is always first rate.</p>
@@ -104,65 +103,9 @@ get_header();
         <?php endwhile; endif; wp_reset_query(); ?>
         </article>
 
-        <!--<form class="quote-right" action="<? $_SERVER['PHP_SELF']; ?>" method="post">
-        <input type="text" placeholder="Name" name="name" />
-        <input type="text" placeholder="Email Address" name="email" />
-        <input type="text" placeholder="Street Address" name="street" />
-        <input type="text" value="Virginia" class="state" disabled="disabled" name="state" />
-        <input type="text" class="zip" placeholder="City" name="city" />
-        <input type="text" placeholder="Comments" class="textarea" name="comments" />
-        <input type="submit" class="submit" value="submit" />-->
-
         <div class="quote-right">
-		<?php //if (function_exists('serveCustomContactForm')) { serveCustomContactForm(1); } ?>
-
-        <!--<form method="post" action="">
-        <input type="text" placeholder="Name" name="name" />
-        <input type="text" placeholder="Email Address" name="email" />
-        <input type="text" placeholder="Street Address" name="street" />
-        <input type="text" value="Virginia" class="state" disabled="disabled" name="state" />
-        <input type="text" class="zip" placeholder="Zip" name="zip" />
-        <input type="text" placeholder="City" name="city" />
-        <input type="text" placeholder="Comments" class="textarea" name="comments" />
-        <input type="submit" class="submit" value="submit" />
-
-        <input type="hidden" name="ccf_customhtml" value="1" />
-        <input type="hidden" name="success_message" value="Thank you for filling out our form!" />
-        <input type="hidden" name="destination_email" value="latinroguecleaning@gmail.com " />
-        <input type="hidden" name="required_fields" value="email" />
-
-</form>
-
-        <span>Latin Rogue Cleaning currently only serves the Virginia area.</span>-->
-
-        <?php echo do_shortcode('[formidable id=2]'); ?>
-
+            <?php echo do_shortcode('[formidable id=2]'); ?>
         </div>
-
-        <? /*
-		$to = 'therstyle@gmail.com';
-		$from = 'From: '.$_POST['email'];
-		$subject = 'Email submission from website';
-		$message = '
-
-		Name = '.$_POST['name'].'
-		Email = '.$_POST['email'].'
-		Street = '.$_POST['street'].'
-		State = '.$_POST['state'].'
-		Zip = '.$_POST['zip'].'
-		Comments = '.$_POST['comments'].'
-
-		';
-
-		if ($_POST['email'] != NULL)
-			{
-			echo 'Thank you, we will get back to you shortly.';
-			mail('latinroguecleaning@gmail.com ', 'subject', 'message', 'From: '.$_POST['email']);
-			}
-		*/?>
-
-        <!--<span>Latin Rogue Cleaning currently only serves the Virginia area.</span>-->
-
     </section>
 
     <?php get_footer(); ?>
