@@ -1,34 +1,9 @@
-/* !
-Theme Name: Latin Rogue Cleaning
-Theme URI: https://chrisrobertsweb.dev
-Description: Latin Rogue Cleaning custom theme
-Version: 2.00
-Author: Chris Roberts
-*/
-
-@import 'css/reset';
-@import 'css/fonts';
-
-/* ONE PAGE LOVE */
-
-.opl {
-position:fixed;
-top:100px;
-left:0px;
-z-index:99999;
-}
-.opl a {
-width:73px;
-height:56px;
-text-indent:-9999px;
-display:block;
-background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
-}
-
-/* ------------- */
+@import 'reset';
+@import 'fonts';
 
 body {
-	background:#45913f url(images/bg-top.jpg) no-repeat center top;
+	background:#45913f url(../../images/bg-top.jpg) no-repeat center top;
+	background: yellow !important;
 	color:#FFF;
 	font-size:14px;
 	font-family:'Agenda-Medium', verdana, sans-serif;
@@ -131,7 +106,7 @@ h4 {
 }
 
 .top {
-	background:url(images/bg-clouds2.png) repeat-x;
+	background:url(../../images/bg-clouds2.png) repeat-x;
 	width:100%;
 	min-height:720px;
 	text-shadow:1px 1px 0px #157cd0;
@@ -222,7 +197,7 @@ nav .current-menu-item a {
 
 .about {
 	width:100%;
-	background:#398234 url(images/bg-about.jpg) repeat-x;
+	background:#398234 url(../../images/bg-about.jpg) repeat-x;
 	text-shadow:1px 1px 0px #285c25;
 	overflow:auto;
 	padding:20px 0 0 0;
@@ -261,7 +236,7 @@ nav .current-menu-item a {
 
 .divider {
 	width:960px;
-	background:url(images/bg-divider.png) no-repeat;
+	background:url(../../images/bg-divider.png) no-repeat;
 	height:44px;
 	margin:45px auto 35px auto;
 }
@@ -275,7 +250,7 @@ nav .current-menu-item a {
 	overflow:auto;
 	text-shadow:1px 1px 0px #285c25;
 	border-bottom:1px solid #000;
-	background:#45913f url(images/bg-services.jpg) repeat-x;
+	background:#45913f url(../../images/bg-services.jpg) repeat-x;
 	padding-bottom:10px;
 }
 
@@ -309,7 +284,7 @@ article.kitchen {
 }
 
 article.kitchen h2 {
-	background:url(images/icons/kitchen.png) no-repeat left bottom;
+	background:url(../../images/icons/kitchen.png) no-repeat left bottom;
 }
 
 article.bathroom {
@@ -319,7 +294,7 @@ article.bathroom {
 }
 
 article.bathroom h2 {
-	background:url(images/icons/bathroom.png) no-repeat left bottom;
+	background:url(../../images/icons/bathroom.png) no-repeat left bottom;
 }
 
 article.all-rooms {
@@ -329,7 +304,7 @@ article.all-rooms {
 }
 
 article.all-rooms h2 {
-	background:url(images/icons/all-rooms.png) no-repeat left bottom;
+	background:url(../../images/icons/all-rooms.png) no-repeat left bottom;
 }
 
 .call-wrap {
@@ -345,7 +320,7 @@ article.all-rooms h2 {
 }
 
 .call {
-	background:url(images/bg-call.png) no-repeat;
+	background:url(../../images/bg-call.png) no-repeat;
 	position:relative;
 	width:519px;
 	height:200px;
@@ -356,7 +331,7 @@ article.all-rooms h2 {
 }
 
 .click {
-	background:url(images/bg-click.png) no-repeat;
+	background:url(../../images/bg-click.png) no-repeat;
 	width:390px;
 	height:125px;
 	display:block;
@@ -368,7 +343,7 @@ article.all-rooms h2 {
 	height:125px;
 	float:right;
 	overflow:hidden;
-	background:url(images/bg-quotes.png) no-repeat;
+	background:url(../../images/bg-quotes.png) no-repeat;
 	padding-left:68px;
 }
 
@@ -390,7 +365,7 @@ article.all-rooms h2 {
 	width:100%;
 	border-top:1px solid #b67c27;
 	overflow:auto;
-	background:#794800 url(images/bg-bottom.jpg) repeat-x;
+	background:#794800 url(../../images/bg-bottom.jpg) repeat-x;
 	text-shadow:1px 1px 0px #2b1400;
 	padding:20px 0 0 0;
 }
@@ -611,34 +586,6 @@ p.more {
 	margin:0 0 10px 0;
 }
 
-/* search */
-
-.searchbar-left {
-	background:url(images/searchbar-bg-01.png);
-	background-repeat:no-repeat;
-	width:130px;
-	height:25px;
-	font-size:11px;
-	color:#666;
-	margin:0px;
-	padding:0px 0px 0px 10px;
-	border:0px;
-	float:left;
-}
-
-.searchbar-right {
-	background:url(images/searchbar-bg-02.png);
-	background-repeat:no-repeat;
-	width:30px;
-	height:25px;
-	margin:0px;
-	padding:0px;
-	border:0px;
-	float:left;
-}
-
-/* shortcodes */
-
 /* genreal */
 
 .end {
@@ -658,8 +605,6 @@ p.more {
 	background:#563000;
 	padding:10px;
 	margin:60px 0 0 0;
-	-moz-border-radius:10px 10px 0px 0px;
-	-webkit-border-radius:10px 10px 0px 0px;
 	border-radius:10px 10px 0px 0px;
 	text-align:center;
 	float:left;
@@ -709,7 +654,7 @@ ul.social li {
 @media only screen and (max-device-width:1200px) {
 	body {
 		font-size:12px;
-		background:#45913f url(images/bg-top-mobile.jpg) no-repeat center 30px;
+		background:#45913f url(../../images/bg-top-mobile.jpg) no-repeat center 30px;
 	}
 
 	.btn {
@@ -819,7 +764,7 @@ ul.social li {
 	}
 
 	.about-right header {
-		background:url(images/icons/dustpan-mobile.png) no-repeat left center;
+		background:url(../../images/icons/dustpan-mobile.png) no-repeat left center;
 	}
 
 	.about h2 {
@@ -868,15 +813,15 @@ ul.social li {
 	}
 
 	article.kitchen h2 {
-		background:url(images/icons/kitchen-mobile.png) no-repeat 20px center;
+		background:url(../../images/icons/kitchen-mobile.png) no-repeat 20px center;
 	}
 
 	article.bathroom h2 {
-		background:url(images/icons/bathroom-mobile.png) no-repeat 20px center;
+		background:url(../../images/icons/bathroom-mobile.png) no-repeat 20px center;
 	}
 
 	article.all-rooms h2 {
-		background:url(images/icons/all-rooms-mobile.png) no-repeat 20px center;
+		background:url(../../images/icons/all-rooms-mobile.png) no-repeat 20px center;
 	}
 
 	article.kitchen, article.bathroom, article.all-rooms {
@@ -1053,7 +998,7 @@ ul.social li {
 @media screen and (orientation:landscape) and (max-device-width:1200px) {
 	body {
 		font-size:12px;
-		background:#45913f url(images/bg-top-mobile2.jpg) no-repeat center 30px;
+		background:#45913f url(../../images/bg-top-mobile2.jpg) no-repeat center 30px;
 	}
 
 	.btn {
@@ -1165,7 +1110,7 @@ ul.social li {
 	}
 
 	.about-right header {
-		background:url(images/icons/dustpan-mobile.png) no-repeat 100px center;
+		background:url(../../images/icons/dustpan-mobile.png) no-repeat 100px center;
 	}
 
 	.about h2 {
@@ -1216,15 +1161,15 @@ ul.social li {
 	}
 
 	article.kitchen h2 {
-		background:url(images/icons/kitchen-mobile.png) no-repeat 100px center;
+		background:url(../../images/icons/kitchen-mobile.png) no-repeat 100px center;
 	}
 
 	article.bathroom h2 {
-		background:url(images/icons/bathroom-mobile.png) no-repeat 100px center;
+		background:url(../../images/icons/bathroom-mobile.png) no-repeat 100px center;
 	}
 
 	article.all-rooms h2 {
-		background:url(images/icons/all-rooms-mobile.png) no-repeat 100px center;
+		background:url(../../images/icons/all-rooms-mobile.png) no-repeat 100px center;
 	}
 
 	article.kitchen, article.bathroom, article.all-rooms {
@@ -1374,4 +1319,21 @@ ul.social li {
 		text-align:right;
 		font-size:14px; /* change for landscape */
 	}
+}
+
+/* ONE PAGE LOVE */
+
+.opl {
+  position:fixed;
+  top:100px;
+  left:0px;
+  z-index:99999;
+}
+
+.opl a {
+  width:73px;
+  height:56px;
+  text-indent:-9999px;
+  display:block;
+  background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
 }

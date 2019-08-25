@@ -17,8 +17,8 @@
 <div class="opl"><a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank">Latin Rogue Cleaning featured on One Page Love</a></div>
 
 <div class="top">
-<a name="top" id="top"></a>
-<nav class="mobile-only"><?php wp_nav_menu('menu=main'); ?></nav>
+    <a name="top" id="top"></a>
+    <nav class="mobile-only"><?php wp_nav_menu('menu=main'); ?></nav>
 	<header>
     <a class="logo" href="<?php echo bloginfo('url'); ?>" title="Click Here For A Free Quote"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt=""></a>
     <nav class="desktop-only"><?php wp_nav_menu('menu=main'); ?></nav>
