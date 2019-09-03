@@ -40,9 +40,11 @@ $services = get_field('services');
 <div class="services">
 	<section>
     <article class="services-summary">
-      <header>
-        <h1>Services</h1>
-      </header>
+      <?php if($servicesHeadline): ?>
+        <header>
+          <h1><?php echo $servicesHeadline; ?></h1>
+        </header>
+      <?php endif; ?>
       
       <?php query_posts('page_id=14'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -50,6 +52,7 @@ $services = get_field('services');
       <?php endwhile; endif; wp_reset_query(); ?>
     </article>
 
+    <?php //TODO: add repeater for each service ?>
     <article class="kitchen">
       <?php query_posts('page_id=16'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

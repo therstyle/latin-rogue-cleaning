@@ -20,7 +20,7 @@
     <a class="scroll-anchor" id="top"></a>
     <div class="top">
       <nav class="mobile-only">
-          <?php wp_nav_menu('menu=main'); ?>
+          <?php wp_nav_menu(array('theme_location' => 'main')); ?>
       </nav>
       
       <header>
