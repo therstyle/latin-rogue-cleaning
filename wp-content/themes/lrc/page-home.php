@@ -4,12 +4,12 @@
 get_header();
 ?>
 
+<a class="scroll-anchor" id="about"></a>
 <div class="about">
-<a name="about" id="about"></a>
 	<section>
     	<article>
         	<div class="about-left">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/dustpan.png" title="Why Latin Rogue Is A Clean Sweep" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/dustpan.png" alt="Why Latin Rogue Is A Clean Sweep" />
             </div>
 
             <div class="about-right">
@@ -28,8 +28,8 @@ get_header();
     <div class="divider"></div>
 </div>
 
+<a class="scroll-anchor" id="services"></a>
 <div class="services">
-<a name="services" id="services"></a>
 	<section>
     	<article class="services-summary">
         	<header><h1>Services</h1></header>
@@ -63,7 +63,7 @@ get_header();
             <?php endwhile; endif; wp_reset_query(); ?>
         </article>
 
-        <a name="contact" id="contact"></a>
+        <a class="scroll-anchor" id="contact"></a>
         <div class="call-wrap">
         	<div class="absolute">
             <a class="call" href="tel:520-256-4237" title="To find out more about Latin Rogue Cleaning's rates or services call (757) 812-3603 today!">(757) 812-3603</a>
@@ -90,7 +90,7 @@ get_header();
 </div>
 
 <div class="bottom">
-<a name="quote" id="quote"></a>
+<a class="scroll-anchor" id="quote"></a>
 	<section>
     	<article class="quote-left">
         	<header>
