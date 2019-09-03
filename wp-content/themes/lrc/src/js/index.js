@@ -1,5 +1,6 @@
+import functions from 'functions';
 import '../css/style.scss';
 
-const test = 'test';
-
-console.log(test);
+document.addEventListener('DOMContentLoaded', () => {
+  functions.ready();
+});
