@@ -1,8 +1,4 @@
-<?php
-/* Template Name: Home
-*/
-get_header();
-?>
+<?php get_header(); ?>
 
 <a class="scroll-anchor" id="about"></a>
 <div class="about">
