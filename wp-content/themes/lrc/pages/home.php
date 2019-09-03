@@ -1,35 +1,49 @@
 <?php get_header(); ?>
+<?php
+$aboutImage = get_field('about-image');
+$aboutHeadline = get_field('about-headline');
+$aboutText = get_field('about-text');
+$servicesHeadline = get_field('services-headline');
+$services = get_field('services');
+?>
 
 <a class="scroll-anchor" id="about"></a>
 <div class="about">
 	<section>
     <article>
       <div class="about-left">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/dustpan.png" alt="Why Latin Rogue Is A Clean Sweep" />
+        <?php 
+        if($aboutImage) {
+          echo wp_get_attachment_image($aboutImage, 'full');
+        }
+        ?>
       </div>
 
       <div class="about-right">
-        <header>
-          <h2>why latin rogue</h2>
-          <h1>is a clean sweep</h1>
-        </header>
-      
-        <?php query_posts('page_id=11'); ?>
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_content(); ?>
-        <?php endwhile; endif; wp_reset_query(); ?>
+        <?php if($aboutHeadline): ?>
+          <header>
+            <?php echo $aboutHeadline; ?>
+          </header>
+        <?php endif; ?>
+
+        <?php
+        if ($aboutText) {
+          echo $aboutText;
+        }
+        ?>
       </div>
     </article>
 	</section>
-
-  <div class="divider"></div>
 </div>
 
 <a class="scroll-anchor" id="services"></a>
 <div class="services">
 	<section>
     <article class="services-summary">
-      <header><h1>Services</h1></header>
+      <header>
+        <h1>Services</h1>
+      </header>
+      
       <?php query_posts('page_id=14'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content(); ?>
