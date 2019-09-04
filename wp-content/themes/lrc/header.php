@@ -17,36 +17,14 @@
       <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank">Latin Rogue Cleaning featured on One Page Love</a>
     </div>
 
-    <a class="scroll-anchor" id="top"></a>
-    <div class="top">
-      <nav class="mobile-only">
-          <?php wp_nav_menu(array('theme_location' => 'main')); ?>
-      </nav>
-      
-      <header>
+    <header class="main">
+      <div class="wrapper">
         <a class="logo" href="<?php echo bloginfo('url'); ?>" title="Click Here For A Free Quote">
           <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
         </a>
 
-        <nav class="desktop-only">
-          <?php wp_nav_menu('menu=main'); ?>
+        <nav>
+          <?php wp_nav_menu(array('theme_location' => 'main')); ?>
         </nav>
-      
-        <div class="absolute">
-          <img src="<?php echo bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt="">
-        </div>
-          
-        
-        <h1>
-          <small>Make Your World as</small>
-          Clean As Mine
-        </h1>
-        
-        <?php query_posts('page_id=9'); ?>    
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_content(); ?>
-        <?php endwhile; endif; wp_reset_query(); ?>
-
-        <a class="btn" href="<?php echo bloginfo('url'); ?>/#quote">Get A Free Quote</a>
-      </header>
-    </div>
+      </div>
+    </header>

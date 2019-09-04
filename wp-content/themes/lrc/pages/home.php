@@ -8,6 +8,28 @@ $servicesHeadline = get_field('services_headline');
 $services = get_field('services');
 ?>
 
+<a class="scroll-anchor" id="top"></a>
+<div class="top">  
+  <section>
+    <div class="absolute">
+      <img src="<?php echo bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt="">
+    </div>
+      
+    
+    <h1>
+      <small>Make Your World as</small>
+      Clean As Mine
+    </h1>
+    
+    <?php query_posts('page_id=9'); ?>    
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php the_content(); ?>
+    <?php endwhile; endif; wp_reset_query(); ?>
+
+    <a class="btn" href="<?php echo bloginfo('url'); ?>/#quote">Get A Free Quote</a>
+  </section>
+</div>
+
 <a class="scroll-anchor" id="about"></a>
 <div class="about">
 	<section>

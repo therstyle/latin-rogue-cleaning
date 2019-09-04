@@ -11,4 +11,9 @@ add_action('wp_enqueue_scripts', 'loadAssets');
 function registerMenus() {
   register_nav_menu('main', 'Main Menu');
 }
+
+//ACF
+if(function_exists('acf_add_options_page')) {
+  acf_add_options_page();
+}
 ?>
