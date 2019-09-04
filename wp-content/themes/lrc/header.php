@@ -12,6 +12,10 @@
     <?php wp_head(); ?>
   </head>
 
+  <?php
+  $logo = get_field('logo', 'option');
+  ?>
+
   <body <?php body_class(); ?>>
     <div class="opl">
       <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank">Latin Rogue Cleaning featured on One Page Love</a>
