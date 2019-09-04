@@ -36,8 +36,11 @@
           <img src="<?php echo bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt="">
         </div>
           
-        <h2>Make Your World as</h2>
-        <h1>Clean As Mine</h1>
+        
+        <h1>
+          <small>Make Your World as</small>
+          Clean As Mine
+        </h1>
         
         <?php query_posts('page_id=9'); ?>    
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
