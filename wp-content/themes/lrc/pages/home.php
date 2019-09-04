@@ -1,9 +1,10 @@
-<?php get_header(); ?>
-<?php
-$aboutImage = get_field('about-image');
-$aboutHeadline = get_field('about-headline');
-$aboutText = get_field('about-text');
-$servicesHeadline = get_field('services-headline');
+<?php 
+get_header(); 
+
+$aboutImage = get_field('about_image');
+$aboutHeadline = get_field('about_headline');
+$aboutText = get_field('about_text');
+$servicesHeadline = get_field('services_headline');
 $services = get_field('services');
 ?>
 
