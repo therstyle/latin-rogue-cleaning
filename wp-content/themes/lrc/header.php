@@ -24,7 +24,7 @@
     <header class="main">
       <div class="wrapper">
         <?php if($logo): ?>
-          <a class="logo" href="<?php echo bloginfo('home_url'); ?>">
+          <a class="logo" href="<?php echo home_url(); ?>">
             <?php echo wp_get_attachment_image($logo, 'full'); ?>
           </a>
         <?php endif; ?>
