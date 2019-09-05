@@ -72,7 +72,6 @@ $contactText = get_field('contact_text');
     <?php endwhile; endif; ?>
 
     <a class="scroll-anchor" id="contact"></a>
-    
     <?php if($phone): ?>
       <a class="call" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
     <?php endif; ?>
@@ -91,19 +90,25 @@ $contactText = get_field('contact_text');
 <div class="bottom">
 	<section>
     <article class="quote-left">
-      <header>
-        <h1>free quote</h1>
-        <h2>You're Minutes Away from a free estimate!</h2>
-      </header>
+      <?php if($contactHeadline): ?>
+        <header>
+          <?php echo $contactHeadline; ?>
+        </header>
+      <?php endif; ?>
       
-      <?php query_posts('page_id=26'); ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php the_content(); ?>
-      <?php endwhile; endif; wp_reset_query(); ?>
+      <?php 
+      if($contactText) {
+        echo $contactText;
+      }
+      ?>
     </article>
 
     <div class="quote-right">
-      <?php echo do_shortcode('[formidable id=2]'); ?>
+      <?php 
+      if($contactForm) {
+        echo $contactForm;
+      }
+      ?>
     </div>
   </section>
 
