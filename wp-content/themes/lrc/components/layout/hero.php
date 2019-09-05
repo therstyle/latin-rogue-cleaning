@@ -7,7 +7,7 @@ $topText = get_field('top_text');
 <div class="top">  
   <section class="wrapper">
     <div class="absolute">
-      <img src="<?php echo bloginfo('template_directory'); ?>/src/images/latinrogue.svg" class="latinrogue" alt="">
+      <img src="<?php echo bloginfo('template_directory'); ?>/src/images/latinrogue.svg" class="latinrogue" alt="<?php echo bloginfo('name');?>">
     </div>
       
     <?php echo $topHeadline; ?>
