@@ -7,8 +7,8 @@ $aboutImage = get_field('about_image');
 $aboutHeadline = get_field('about_headline');
 $aboutText = get_field('about_text');
 $servicesHeadline = get_field('services_headline');
-$services = get_field('services');
 $servicesText = get_field('services_text');
+$phone = get_field('phone');
 $contactHeadline = get_field('contact_headline');
 $contactText = get_field('contact_text');
 ?>
@@ -67,31 +67,23 @@ $contactText = get_field('contact_text');
       <?php echo $servicesText; ?>
     </article>
 
-    <?php //TODO: add repeater for each service ?>
-
     <?php if(have_rows('services')): while(have_rows('services')): the_row(); ?>
       <?php get_template_part('../layout/service'); ?>
     <?php endwhile; endif; ?>
 
     <a class="scroll-anchor" id="contact"></a>
-    <a class="call" href="tel:520-256-4237" title="To find out more about Latin Rogue Cleaning's rates or services call (757) 812-3603 today!">(757) 812-3603</a>
-
-    <div class="quotes">
-      <div>
-        <p>Latin Rogue Cleaning is, without a doubt, the most responsive cleaning service I have ever used in all my years of property and facilities management services. They respond quickly unlike many of their competitors and the service is always first rate.</p>
-        <p class="quote-name">Jim Stevenson</p>
-      </div>
-
-      <div>
-        <p>I have used several cleaning companies for my offices but nobody is as reliable and consistent as Latin Rogue Cleaning Services. They are the best. </p>
-        <p class="quote-name">Susan Black</p>
-      </div>
-
-      <div>
-        <p>Latin Rogue Cleaning is a lifesaver! Without them I wouldn't have had the time (or the energy) to throw my sister's baby shower! Thanks to Latin Rogue Cleaning my party was a success!</p>
-        <p class="quote-name">Lisa Turner</p>
-      </div>
-    </div>
+    
+    <?php if($phone): ?>
+      <a class="call" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+    <?php endif; ?>
+    
+    <?php if(have_rows('quotes')):?>
+        <div class="quotes">
+          <?php while(have_rows('quotes')): the_row(); ?>
+            <?php get_template_part('../layout/quote'); ?>
+          <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
   </section>
 </div>
 
