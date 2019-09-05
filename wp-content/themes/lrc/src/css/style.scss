@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'vars';
 @import 'fonts';
 
 @keyframes clouds {
@@ -15,7 +16,7 @@ body {
 	background: #45913f url(../images/bg-top.jpg) no-repeat center top;
 	color: #FFF;
 	font-size: 14px;
-	font-family:'Agenda-Medium', verdana, sans-serif;
+	font-family: var(--main);
 }
 
 bold, strong {
@@ -53,7 +54,7 @@ h3,
 h4, 
 h5, 
 h6 {
-	font-family: 'Agenda-Bold', verdana, sans-serif;
+	font-family: var(--headline);
 	text-transform: uppercase;
 	clear: both;
 	font-weight: normal;
@@ -85,13 +86,15 @@ h4 {
 }
 
 .wrapper {
-	width: 960px;
+  width: 100%;
+  max-width: var(--max-width);
 	margin: auto;
-	overflow: auto;
+  overflow: auto;
+  display: flex;
 }
 
 .btn {
-	font-family: 'Agenda-Bold', verdana, sans-serif;
+	font-family: var(--headline);
 	font-size: 24px;
 	border-radius: 10px;
 	display: inline-block;
@@ -103,13 +106,12 @@ header.main {
 	margin-bottom: 60px;
 
 	.wrapper {
-		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
 	.menu {
-		font-family: 'Agenda-Bold', verdana, sans-serif;
+		font-family: var(--headline);
 		font-size: 18px;
 		text-transform: lowercase;
 		display: flex;
@@ -135,7 +137,7 @@ header.main {
 	text-align: center;
 
 	header {
-		width: 960px;
+		width: var(--max-width);
 		margin: 22px auto 0 auto;
 		text-align: center;
 	}
@@ -188,7 +190,7 @@ header.main {
 	padding: 20px 0 125px;
 
 	section {
-		width: 960px;
+		width: var(--max-width);
 		margin: auto;
 		overflow: auto;
 	}
@@ -219,13 +221,6 @@ header.main {
 	width: 660px;
 }
 
-.divider {
-	width: 960px;
-	background: url(../images/bg-divider.png) no-repeat;
-	height: 44px;
-	margin: 45px auto 35px auto;
-}
-
 .services {
 	width: 100%;
 	overflow: auto;
@@ -235,7 +230,7 @@ header.main {
 	padding-bottom: 10px;
 
 	section {
-		width: 960px;
+		width: var(--max-width);
 		margin: auto;
 		overflow: auto;
 	}
@@ -335,7 +330,7 @@ article {
 }
 
 .quote-name {
-	font-family: 'Agenda-Bold';
+	font-family: var(--headline);
 	margin:0px;
 	text-align:right;
 }
@@ -349,9 +344,9 @@ article {
 	padding: 20px 0 0 0;
 
 	section {
-		width:960px;
-		overflow:auto;
-		margin:0 auto 0 auto;
+		width: var(--max-width);
+		overflow: auto;
+		margin: 0 auto 0 auto;
 	}
 	
 	article {
@@ -461,7 +456,7 @@ article {
 }
 
 footer {
-	width: 960px;
+	width: var(--max-width);
 	margin: auto;
 	clear: both;
 	overflow: auto;
