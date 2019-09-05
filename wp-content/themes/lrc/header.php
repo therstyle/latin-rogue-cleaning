@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
     <meta itemprop="name" content="Latin Rogue Cleaning Services">
-    <meta property="og:image" content="<? bloginfo('template_directory'); ?>/images/opengraph.jpg" />
-    <meta itemprop="description" content="Latin Rogue Cleaning... A Clean Sweep!">
+    <meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/opengraph.jpg" />
+    <meta itemprop="description" content="<?php bloginfo('description'); ?>">
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
     <?php wp_head(); ?>
