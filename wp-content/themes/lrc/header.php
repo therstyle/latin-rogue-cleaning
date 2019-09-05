@@ -18,7 +18,7 @@
 
   <body <?php body_class(); ?>>
     <div class="opl">
-      <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank">Latin Rogue Cleaning featured on One Page Love</a>
+      <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank"></a>
     </div>
 
     <header class="main">
@@ -29,8 +29,9 @@
           </a>
         <?php endif; ?>
 
-        <nav>
-          <?php wp_nav_menu(array('theme_location' => 'main')); ?>
-        </nav>
+        <?php wp_nav_menu(array(
+          'theme_location' => 'main',
+          'container' => 'nav'
+        )); ?>
       </div>
     </header>
