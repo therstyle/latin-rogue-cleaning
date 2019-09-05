@@ -49,7 +49,6 @@
 	}
 
 	.logo {
-		float: none;
 		width: 260px;
 		margin: 0 auto 20px auto;
 
@@ -78,7 +77,6 @@
 		a.btn {
 			clear: both;
 			display: block;
-			float: right; /* change for landscape */
 		}
 	}
 
@@ -101,7 +99,6 @@
 			padding: 0 2.5% 0 2.5%;
 			width: 28%;
 			display: table-cell;
-			float: none;
 		}
 	}
 
@@ -122,7 +119,6 @@
 	}
 
 	.about-right {
-		float: none;
 		width: auto;
 
 		header {
@@ -177,32 +173,7 @@
 		margin: 0 0 20px 0;
 	}
 
-	article.kitchen h2 {
-		background: url(../images/icons/kitchen-mobile.png) no-repeat 20px center;
-	}
-
-	article.bathroom h2 {
-		background: url(../images/icons/bathroom-mobile.png) no-repeat 20px center;
-	}
-
-	article.all-rooms h2 {
-		background: url(../images/icons/all-rooms-mobile.png) no-repeat 20px center;
-	}
-
-	article.kitchen, 
-	article.bathroom, 
-	article.all-rooms {
-		float: none;
-		width: auto;
-		margin: 0 0 20px 0;
-	}
-
 	.call-wrap {
-		width: auto !important;
-		height: auto !important;
-		margin: 0 auto 20px auto !important;
-		float: none !important;
-
 		.absolute {
 			width: auto !important;
 			height: auto !important;
@@ -253,13 +224,11 @@
 	}
 
 	.quote-left {
-		float: none;
 		width: auto;
 		margin: 0px;
 	}
 
 	.quote-right {
-		float: none;
 		width: auto;
 		margin: 0 0 20px 0;
 		text-align: center;
@@ -276,7 +245,6 @@
 		.state input,
 		.zip input,
 		input[type="submit"] {
-			float: none;
 			width: 100%;
 			padding: 10px 10% 10px 10%;
 		}
@@ -293,7 +261,6 @@
 	.sig-wrap {
 		margin-left: auto;
 		margin-right: auto;
-		float: none;
 	}
 
 	.mobile-only {
@@ -303,53 +270,6 @@
 	.desktop-only {
 		display: none;
 	}
-
-	// #ccf-form-success {
-	// 	display:none;
-	// 	border: 9px solid #efefef;
-	// 	border-spacing:0;
-	// 	width:80%;
-	// 	height:auto;
-	// 	padding:0px;
-	// 	margin:0;
-	// 	z-index:10000;
-	// 	-moz-border-radius:10px;
-	// 	-khtml-border-radius:10px;
-	// 	-webkit-border-radius:10px;
-	// 	border-radius:15px;
-	// 	position:fixed;
-	// 	left:8%;
-	// 	background-color:white;
-	// 	top:30%;
-	// 	-moz-box-shadow:none;
-	// 	-webkit-box-shadow:none;
-	// 	box-shadow:none;
-	// 	text-shadow:none;
-	// 	color:#000 !important;
-	// }
-
-	// #ccf-form-success div {
-	// 	background-color:#efefef;
-	// 	padding:4px 9px 9px 20px;
-	// 	margin:0 0 15px 0px;
-	// 	height:1.3em;
-	// }
-	// #ccf-form-success div h5 {
-	// 	text-align:left;
-	// 	float:left;
-	// 	margin:0;
-	// 	padding:0;
-	// 	font-size:14px;
-	// 	color:#000 !important;
-	// }
-	// #ccf-form-success p { padding:8px; margin:0; clear:both; font-size:14px; text-align:center; }
-	// #ccf-form-success div a.close {
-	// 	float:right;
-	// 	display:block;
-	// 	font-size:12px;
-	// 	margin:0;
-	// 	padding:0;
-	// }
 }
 
 /* Landscape */
