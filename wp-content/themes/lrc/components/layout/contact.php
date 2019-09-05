@@ -6,7 +6,7 @@ $contactText = get_field('contact_text');
 
 <a class="scroll-anchor" id="quote"></a>
 <div class="bottom">
-	<section>
+	<section class="wrapper">
     <article class="quote-left">
       <?php if($contactHeadline): ?>
         <header>

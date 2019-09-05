@@ -91,6 +91,7 @@ h4 {
 	margin: auto;
   overflow: auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -107,7 +108,6 @@ header.main {
 
 	.wrapper {
 		align-items: center;
-		justify-content: space-between;
 	}
 
 	.menu {
@@ -137,7 +137,6 @@ header.main {
 	text-align: center;
 
 	header {
-		width: var(--max-width);
 		margin: 22px auto 0 auto;
 		text-align: center;
 	}
@@ -188,12 +187,6 @@ header.main {
 	text-shadow: 1px 1px 0px #285c25;
 	overflow: auto;
 	padding: 20px 0 125px;
-
-	section {
-		width: var(--max-width);
-		margin: auto;
-		overflow: auto;
-	}
 	
 	h1 {
 		font-size: 78px;
@@ -210,14 +203,12 @@ header.main {
 }
 
 .about-left {
-	float: left;
 	width: 250px;
 	margin: 0 50px 0 0;
 	overflow: hidden;
 }
 
 .about-right {
-	float: left;
 	width: 660px;
 }
 
@@ -228,12 +219,6 @@ header.main {
 	border-bottom: 1px solid #000;
 	background: #45913f url(../images/bg-services.jpg) repeat-x;
 	padding-bottom: 10px;
-
-	section {
-		width: var(--max-width);
-		margin: auto;
-		overflow: auto;
-	}
 	
 	h1 {
 		font-size: 87px;
@@ -251,37 +236,6 @@ header.main {
 article {
 	&.services-summary {
 		margin: 0 0 75px 0;
-	}
-
-	&.kitchen {
-		clear: both;
-		float: left;
-		width: 306px;
-		margin: 0 20px 100px 0;
-
-		h2 {
-			background: url(../images/icons/kitchen.png) no-repeat left bottom;
-		}
-	}
-
-	&.bathroom {
-		float: left;
-		width: 306px;
-		margin: 0 20px 100px 0;
-
-		h2 {
-			background: url(../images/icons/bathroom.png) no-repeat left bottom;
-		}
-	}
-
-	&.all-rooms {
-		float: left;
-		width: 306px;
-		margin: 0 0 100px 0;
-
-		h2 {
-			background:url(../images/icons/all-rooms.png) no-repeat left bottom;
-		}
 	}
 }
 
@@ -342,12 +296,6 @@ article {
 	background: #794800 url(../images/bg-bottom.jpg) repeat-x;
 	text-shadow: 1px 1px 0px #2b1400;
 	padding: 20px 0 0 0;
-
-	section {
-		width: var(--max-width);
-		overflow: auto;
-		margin: 0 auto 0 auto;
-	}
 	
 	article {
 		p {
@@ -453,28 +401,6 @@ article {
 
 .hasPlaceholder {
     color:#7c2500;
-}
-
-footer {
-	width: var(--max-width);
-	margin: auto;
-	clear: both;
-	overflow: auto;
-}
-
-img.alignright {
-	float: right;
-	margin: 0 0 10px 10px;
-}
-
-img.alignleft {
-	float: left;
-	margin: 0 10px 10px 0;
-}
-
-img.aligncenter {
-	display: block;
-	margin: 0 auto 0 auto;
 }
 
 .left,

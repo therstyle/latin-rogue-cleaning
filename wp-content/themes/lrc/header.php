@@ -29,9 +29,11 @@
           </a>
         <?php endif; ?>
 
-        <?php wp_nav_menu(array(
-          'theme_location' => 'main',
-          'container' => 'nav'
-        )); ?>
+        <?php 
+          wp_nav_menu(array(
+            'theme_location' => 'main',
+            'container' => 'nav'
+          )); 
+        ?>
       </div>
     </header>

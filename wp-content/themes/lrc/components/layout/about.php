@@ -6,7 +6,7 @@ $aboutText = get_field('about_text');
 
 <a class="scroll-anchor" id="about"></a>
 <div class="about">
-	<section>
+	<section class="wrapper">
     <article>
       <div class="about-left">
         <?php 

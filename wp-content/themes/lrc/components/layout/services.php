@@ -5,7 +5,7 @@ $servicesText = get_field('services_text');
 
 <a class="scroll-anchor" id="services"></a>
 <div class="services">
-	<section>
+	<section class="wrapper">
     <article class="services-summary">
       <?php if($servicesHeadline): ?>
         <header>
