@@ -8,6 +8,9 @@ $aboutHeadline = get_field('about_headline');
 $aboutText = get_field('about_text');
 $servicesHeadline = get_field('services_headline');
 $services = get_field('services');
+$servicesText = get_field('services_text');
+$contactHeadline = get_field('contact_headline');
+$contactText = get_field('contact_text');
 ?>
 
 <a class="scroll-anchor" id="top"></a>
@@ -61,43 +64,17 @@ $services = get_field('services');
         </header>
       <?php endif; ?>
       
-      <?php query_posts('page_id=14'); ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php the_content(); ?>
-      <?php endwhile; endif; wp_reset_query(); ?>
+      <?php echo $servicesText; ?>
     </article>
 
     <?php //TODO: add repeater for each service ?>
-    <article class="kitchen">
-      <?php query_posts('page_id=16'); ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <header><h2><?php the_title(); ?></h2></header>
-      <?php the_content(); ?>
-      <?php endwhile; endif; wp_reset_query(); ?>
-    </article>
 
-    <article class="bathroom">
-      <?php query_posts('page_id=18'); ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <header><h2><?php the_title(); ?></h2></header>
-      <?php the_content(); ?>
-      <?php endwhile; endif; wp_reset_query(); ?>
-    </article>
-
-    <article class="all-rooms">
-      <?php query_posts('page_id=20'); ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <header><h2><?php the_title(); ?></h2></header>
-      <?php the_content(); ?>
-      <?php endwhile; endif; wp_reset_query(); ?>
-    </article>
+    <?php if(have_rows('services')): while(have_rows('services')): the_row(); ?>
+      <?php get_template_part('../layout/service'); ?>
+    <?php endwhile; endif; ?>
 
     <a class="scroll-anchor" id="contact"></a>
-    <div class="call-wrap">
-      <div class="absolute">
-        <a class="call" href="tel:520-256-4237" title="To find out more about Latin Rogue Cleaning's rates or services call (757) 812-3603 today!">(757) 812-3603</a>
-        </div>
-    </div>
+    <a class="call" href="tel:520-256-4237" title="To find out more about Latin Rogue Cleaning's rates or services call (757) 812-3603 today!">(757) 812-3603</a>
 
     <div class="quotes">
       <div>
