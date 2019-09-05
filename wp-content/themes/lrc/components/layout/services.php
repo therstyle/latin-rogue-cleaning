@@ -28,7 +28,7 @@ $servicesText = get_field('services_text');
     <?php if(have_rows('quotes')):?>
         <div class="quotes">
           <?php while(have_rows('quotes')): the_row(); ?>
-            <?php get_template_part('../layout/quote'); ?>
+            <?php get_template_part('quote'); ?>
           <?php endwhile; ?>
         </div>
     <?php endif; ?>
