@@ -1,6 +1,8 @@
 <?php 
 get_header(); 
 
+$topHeadline = get_field('top_headline');
+$topText = get_field('top_text');
 $aboutImage = get_field('about_image');
 $aboutHeadline = get_field('about_headline');
 $aboutText = get_field('about_text');
@@ -10,23 +12,13 @@ $services = get_field('services');
 
 <a class="scroll-anchor" id="top"></a>
 <div class="top">  
-  <section>
+  <section class="wrapper">
     <div class="absolute">
-      <img src="<?php echo bloginfo('template_directory'); ?>/images/latinrogue.png" class="latinrogue" alt="">
+      <img src="<?php echo bloginfo('template_directory'); ?>/src/images/latinrogue.svg" class="latinrogue" alt="">
     </div>
       
-    
-    <h1>
-      <small>Make Your World as</small>
-      Clean As Mine
-    </h1>
-    
-    <?php query_posts('page_id=9'); ?>    
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <?php the_content(); ?>
-    <?php endwhile; endif; wp_reset_query(); ?>
-
-    <a class="btn" href="<?php echo bloginfo('url'); ?>/#quote">Get A Free Quote</a>
+    <?php echo $topHeadline; ?>
+    <?php echo $topText; ?>
   </section>
 </div>
 

@@ -23,9 +23,11 @@
 
     <header class="main">
       <div class="wrapper">
-        <a class="logo" href="<?php echo bloginfo('url'); ?>" title="Click Here For A Free Quote">
-          <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
-        </a>
+        <?php if($logo): ?>
+          <a class="logo" href="<?php echo bloginfo('home_url'); ?>">
+            <?php echo wp_get_attachment_image($logo, 'full'); ?>
+          </a>
+        <?php endif; ?>
 
         <nav>
           <?php wp_nav_menu(array('theme_location' => 'main')); ?>

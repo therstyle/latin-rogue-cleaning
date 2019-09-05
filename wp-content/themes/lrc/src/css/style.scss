@@ -1,6 +1,16 @@
 @import 'reset';
 @import 'fonts';
 
+@keyframes clouds {
+	from {
+		background-position:0px 0px;
+	}
+
+	to {
+		background-position:-10000px -000px;
+	}
+}
+
 body {
 	background: #45913f url(../images/bg-top.jpg) no-repeat center top;
 	color: #FFF;
@@ -56,6 +66,10 @@ h1 {
 	small {
 		display: block;
 	}
+
+	br {
+		display: none;
+	}
 }
 
 h2 {
@@ -84,23 +98,41 @@ h4 {
 	text-transform: uppercase;
 }
 
-@keyframes clouds {
-	from {
-		background-position:0px 0px;
+header.main {
+	margin-top: 24px;
+	margin-bottom: 60px;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
-	to {
-		background-position:-10000px -000px;
+	.menu {
+		font-family: 'Agenda-Bold', verdana, sans-serif;
+		font-size: 18px;
+		text-transform: lowercase;
+		display: flex;
+		justify-content: space-between;
+	
+		li {
+			margin-left: 30px;
+		}
+		
+		a {
+			color: #FFF;
+		}
 	}
 }
 
 .top {
 	background: url(../images/bg-clouds2.png) repeat-x;
 	width: 100%;
-	min-height: 720px;
+	min-height: 550px;
 	text-shadow: 1px 1px 0px #157cd0;
 	overflow: auto;
-	animation:clouds linear infinite 1000s;
+	animation: clouds linear infinite 1000s;
+	text-align: center;
 
 	header {
 		width: 960px;
@@ -128,7 +160,10 @@ h4 {
 		border: 1px solid #FFF;
 		padding: 10px;
 		background: #e6700e;
-		background-image: linear-gradient(top, #f3ae36, #d84202);
+		background: #f3ae36;
+		background: -moz-linear-gradient(top,  #f3ae36 0%, #d84202 100%);
+		background: -webkit-linear-gradient(top,  #f3ae36 0%,#d84202 100%);
+		background: linear-gradient(to bottom,  #f3ae36 0%,#d84202 100%);
 		text-shadow: 1px 1px 0px #000;
 		color: #FFF;
 	}
@@ -136,33 +171,13 @@ h4 {
 
 .latinrogue {
 	position: relative;
-	top: 120px;
-	left: -40px;
+	top: -27px;
+	left: -42px;
+	width: 320px;
 }
 
 .logo {
-	float: left;
-	width: 309px;
-	height: 87px;
-	display: block;
-	margin: 0 0 60px 0;
-}
-
-nav {
-	float: right;
-	font-family: 'Agenda-Bold', verdana, sans-serif;
-	font-size: 18px;
-	text-transform: lowercase;
-	margin: 30px 0 0 0;
-
-	li {
-		float: left;
-		margin-left: 30px;
-	}
-	
-	a {
-		color: #FFF;
-	}
+	width: 310px;
 }
 
 .about {
@@ -170,18 +185,12 @@ nav {
 	background: #398234 url(../images/bg-about.jpg) repeat-x;
 	text-shadow: 1px 1px 0px #285c25;
 	overflow: auto;
-	padding: 20px 0 0 0;
+	padding: 20px 0 125px;
 
 	section {
 		width: 960px;
 		margin: auto;
 		overflow: auto;
-	}
-
-	h2 {
-		font-size: 52px;
-		line-height: 42px;
-		text-align: center;
 	}
 	
 	h1 {
@@ -189,6 +198,12 @@ nav {
 		line-height: 60px;
 		margin: 0 0 25px 0;
 		text-align: center;
+
+		small {
+			font-size: 52px;
+			line-height: 42px;
+			text-align: center;
+		}
 	}
 }
 
