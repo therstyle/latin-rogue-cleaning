@@ -8,8 +8,22 @@ $tablet: 768px;
   --main: 'Agenda-Medium', verdana, sans-serif;
   --headline: 'Agenda-Bold', verdana, sans-serif;
 
+  //Colors
+  --white: #FFF;
+  --black: #000;
+  --shadow-color: rgba(0,0,0,0.4);
+
   //Spacing
   --max-width: 960px;
   --space: 16px;
-  --half-space: calc(var(--space) / 2);
+  --space-half: calc(var(--space) / 2);
+  --space-1: var(--space);
+  --space-1-half: calc(var(--sapce-1) + var(--space-1-half));
+  --space-2: calc(var(--space) * 2);
+  --space-3: calc(var(--space) * 3);
+  --space-4: calc(var(--space) * 4);
+  --space-5: calc(var(--space) * 5);
+  --space-6: calc(var(--space) * 6);
+  --space-7: calc(var(--space) * 7);
+  --space-8: calc(var(--space) * 8);
 }
