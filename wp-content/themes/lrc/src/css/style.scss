@@ -17,6 +17,7 @@ body {
 	color: #FFF;
 	font-size: 14px;
 	font-family: var(--main);
+	line-height: 1.5;
 }
 
 a,
@@ -31,12 +32,6 @@ p {
 	&.more {
 		font-weight: bold;
 		text-align: right;
-	}
-}
-
-article {
-	p {
-		line-height: 18px;
 	}
 }
 
@@ -128,6 +123,10 @@ header.main {
 	animation: clouds linear infinite 1000s;
 	text-align: center;
 
+	.wrapper {
+		flex-direction: column;
+	}
+
 	header {
 		margin: 22px auto 0 auto;
 		text-align: center;
@@ -198,6 +197,9 @@ header.main {
 	width: 250px;
 	margin: 0 50px 0 0;
 	overflow: hidden;
+	flex: 1;
+	display: flex;
+	align-items: center;
 }
 
 .about-right {
@@ -212,6 +214,14 @@ header.main {
 	background: #45913f url(../images/bg-services.jpg) repeat-x;
 	padding-bottom: 10px;
 	
+	.wrapper {
+		flex-direction: column;
+
+		> article {
+			margin-bottom: 75px;
+		}
+	}
+
 	h1 {
 		font-size: 87px;
 		text-align: center;
@@ -225,9 +235,21 @@ header.main {
 	}
 }
 
-article {
-	&.services-summary {
-		margin: 0 0 75px 0;
+.all-services {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.service {
+	width: calc(33.33% - (40px / 3));
+
+	header {
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 41px;
 	}
 }
 
@@ -266,7 +288,7 @@ article {
 	overflow: auto;
 	background: #794800 url(../images/bg-bottom.jpg) repeat-x;
 	text-shadow: 1px 1px 0px #2b1400;
-	padding: 20px 0 0 0;
+	padding: 75px 0 0;
 	
 	article {
 		p {
@@ -276,7 +298,8 @@ article {
 
 	h1 {
 		font-size: 87px;
-    text-align: center;
+		text-align: center;
+		line-height: 1;
     
     small {
       font-size: 24px;
@@ -382,7 +405,6 @@ article {
 	width: 170px;
 	background: #563000;
 	padding: 10px;
-	margin: 60px 0 0 0;
 	border-radius: 10px 10px 0px 0px;
 	text-align: center;
 	clear: both;

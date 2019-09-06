@@ -1,24 +1,29 @@
 <?php
 $servicesHeadline = get_field('services_headline');
 $servicesText = get_field('services_text');
+$phone = get_field('phone');
 ?>
 
 <a class="scroll-anchor" id="services"></a>
 <div class="services">
 	<section class="wrapper">
-    <article class="services-summary">
+    <article>
       <?php if($servicesHeadline): ?>
         <header>
-          <h1><?php echo $servicesHeadline; ?></h1>
+          <?php echo $servicesHeadline; ?>
         </header>
       <?php endif; ?>
       
       <?php echo $servicesText; ?>
     </article>
 
-    <?php if(have_rows('services')): while(have_rows('services')): the_row(); ?>
-      <?php get_template_part('components/layout/service'); ?>
-    <?php endwhile; endif; ?>
+    <?php if(have_rows('services')): ?>
+      <div class="all-services">
+        <?php while(have_rows('services')): the_row(); ?>
+          <?php get_template_part('components/layout/service'); ?>
+        <?php endwhile; ?>
+      </div>
+    <?php endif; ?>
 
     <a class="scroll-anchor" id="contact"></a>
     <?php if($phone): ?>

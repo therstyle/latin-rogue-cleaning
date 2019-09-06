@@ -8,7 +8,7 @@ $serviceText = get_sub_field('service_text');
   <?php if($serviceHeadline || $serviceImage): ?>
     <header>
       <?php 
-      if($serviceImage) {
+      if ($serviceImage) {
         echo wp_get_attachment_image($serviceImage, 'full');
       }
       
@@ -17,5 +17,11 @@ $serviceText = get_sub_field('service_text');
       }
       ?> 
     </header>
+
+    <?php
+    if ($serviceText) {
+      echo $serviceText;
+    }
+    ?>
   <?php endif; ?>
 </article>

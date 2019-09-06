@@ -7,16 +7,16 @@ $aboutText = get_field('about_text');
 <a class="scroll-anchor" id="about"></a>
 <div class="about">
 	<section class="wrapper">
-    <article>
-      <div class="about-left">
-        <?php 
-        if($aboutImage) {
-          echo wp_get_attachment_image($aboutImage, 'full');
-        }
-        ?>
-      </div>
+    <div class="about-left">
+      <?php 
+      if($aboutImage) {
+        echo wp_get_attachment_image($aboutImage, 'full');
+      }
+      ?>
+    </div>
 
-      <div class="about-right">
+    <div class="about-right">
+      <article>
         <?php if($aboutHeadline): ?>
           <header>
             <?php echo $aboutHeadline; ?>
@@ -28,7 +28,7 @@ $aboutText = get_field('about_text');
           echo $aboutText;
         }
         ?>
-      </div>
-    </article>
+      </article>
+    </div>
 	</section>
 </div>

@@ -2,6 +2,7 @@
 $phone = get_field('phone');
 $contactHeadline = get_field('contact_headline');
 $contactText = get_field('contact_text');
+$contactForm = get_field('contact_form');
 ?>
 
 <a class="scroll-anchor" id="quote"></a>

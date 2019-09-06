@@ -206,7 +206,7 @@
                     "key": "field_5d6f0a397e613",
                     "label": "Service Text",
                     "name": "service_text",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -216,10 +216,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         },
@@ -298,5 +298,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567679337
+    "modified": 1567731950
 }
