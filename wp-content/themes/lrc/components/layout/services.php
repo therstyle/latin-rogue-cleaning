@@ -17,7 +17,7 @@ $servicesText = get_field('services_text');
     </article>
 
     <?php if(have_rows('services')): while(have_rows('services')): the_row(); ?>
-      <?php get_template_part('service'); ?>
+      <?php get_template_part('components/layout/service'); ?>
     <?php endwhile; endif; ?>
 
     <a class="scroll-anchor" id="contact"></a>
@@ -28,7 +28,7 @@ $servicesText = get_field('services_text');
     <?php if(have_rows('quotes')):?>
         <div class="quotes">
           <?php while(have_rows('quotes')): the_row(); ?>
-            <?php get_template_part('quote'); ?>
+            <?php get_template_part('components/layout/quote'); ?>
           <?php endwhile; ?>
         </div>
     <?php endif; ?>
