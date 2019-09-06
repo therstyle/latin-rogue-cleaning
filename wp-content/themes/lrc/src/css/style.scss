@@ -14,7 +14,7 @@
 
 body {
 	background: #45913f url(../images/bg-top.jpg) no-repeat center top;
-	color: #FFF;
+	color: var(--white);
 	font-size: 14px;
 	font-family: var(--main);
 	line-height: 1.5;
@@ -186,7 +186,7 @@ header.main {
 .about {
 	width: 100%;
 	background: #398234 url(../images/bg-about.jpg) repeat-x;
-	text-shadow: 1px 1px 0px #285c25;
+	text-shadow: 1px 1px 0px var(--shadow-color);
 	overflow: auto;
 	padding: var(--space-1-half) 0 125px;
 	
@@ -220,8 +220,8 @@ header.main {
 .services {
 	width: 100%;
 	overflow: auto;
-	text-shadow: 1px 1px 0px #285c25;
-	border-bottom: 1px solid #000;
+	text-shadow: 1px 1px 0px var(--shadow-color);
+	border-bottom: 1px solid var(--black);
 	background: #45913f url(../images/bg-services.jpg) repeat-x;
 	padding-bottom: var(--space-5);
 	
