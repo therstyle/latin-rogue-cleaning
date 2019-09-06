@@ -279,7 +279,7 @@ header.main {
 	width: 322px;
 	height: 125px;
 	overflow: hidden;
-	padding-left: var(--sapce-4);
+	padding-left: var(--space-4);
 
 	div {
 		margin-left: var(--space-4);
@@ -328,7 +328,7 @@ header.main {
 .quote-right {
 	width: 310px;
 	overflow: hidden;
-	margin: 0 0 var(--sapce-2) 0;
+	margin: 0 0 var(--space-2) 0;
 
 	label {
 		display: none;
@@ -338,7 +338,7 @@ header.main {
 	textarea {
 		border-radius: 20px;
 		border: 1px solid #7c2500;
-		margin: 0 0 var(--sapce-1);
+		margin: 0 0 var(--space-1);
 		font-family: arial;
 		font-size: 18px;
 		color: #fff;
@@ -355,7 +355,7 @@ header.main {
 	.state {
 		input {
       width: 128px;
-      margin: 0 var(--sapce-1) var(--sapce-1) 0;
+      margin: 0 var(--space-1) var(--space-1) 0;
       color: #ccc;
       clear: both;
     }
