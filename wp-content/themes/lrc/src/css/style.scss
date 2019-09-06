@@ -115,13 +115,24 @@ header.main {
 }
 
 .top {
-	background: url(../images/bg-clouds2.png) repeat-x;
 	width: 100%;
 	min-height: 550px;
 	text-shadow: 1px 1px 0px #157cd0;
 	overflow: auto;
-	animation: clouds linear infinite 1000s;
 	text-align: center;
+
+	&:before {
+		content: '';
+		background: url(../images/bg-clouds2.png) repeat-x;
+		width: 100%;
+		height: 550px;
+		z-index: -1;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		animation: clouds linear infinite 1000s;
+	}
 
 	.wrapper {
 		flex-direction: column;
@@ -268,7 +279,6 @@ header.main {
 	width: 322px;
 	height: 125px;
 	overflow: hidden;
-	background: url(../images/bg-quotes.png) no-repeat;
 	padding-left: 68px;
 
 	div {
