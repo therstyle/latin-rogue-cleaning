@@ -268,7 +268,7 @@ header.main {
 }
 
 .service {
-	width: calc(33.33% - (40px / 3));
+	width: calc(33.33% - ((var(--space-2) * 2) / 3));
 
 	header {
 		text-align: center;
@@ -277,6 +277,11 @@ header.main {
 	h3 {
 		font-size: 41px;
 	}
+}
+
+.services-bottom {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .call {

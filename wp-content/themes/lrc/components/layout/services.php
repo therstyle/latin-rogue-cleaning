@@ -25,17 +25,19 @@ $phone = get_field('phone');
       </div>
     <?php endif; ?>
 
-    <a class="scroll-anchor" id="contact"></a>
-    <?php if($phone): ?>
-      <a class="call" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
-    <?php endif; ?>
-    
-    <?php if(have_rows('quotes')):?>
-        <div class="quotes">
-          <?php while(have_rows('quotes')): the_row(); ?>
-            <?php get_template_part('components/layout/quote'); ?>
-          <?php endwhile; ?>
-        </div>
-    <?php endif; ?>
+    <div class="services-bottom">
+      <a class="scroll-anchor" id="contact"></a>
+      <?php if($phone): ?>
+        <a class="call" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+      <?php endif; ?>
+      
+      <?php if(have_rows('quotes')):?>
+          <div class="quotes">
+            <?php while(have_rows('quotes')): the_row(); ?>
+              <?php get_template_part('components/layout/quote'); ?>
+            <?php endwhile; ?>
+          </div>
+      <?php endif; ?>
+    </div>
   </section>
 </div>
