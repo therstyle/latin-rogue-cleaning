@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'vars';
 @import 'fonts';
+@import 'flickity';
 
 @keyframes clouds {
 	from {
@@ -296,13 +297,23 @@ header.main {
 }
 
 .quotes {
-	width: 322px;
-	height: 125px;
+	width: 100%;
+	max-width: 400px;
 	overflow: hidden;
 	padding-left: var(--space-4);
+	padding-bottom: var(--space-2);
 
 	div {
-		margin-left: var(--space-4);
+		width: 100%;
+	}
+
+	.flickity-page-dots {
+		width: calc(100% - var(--space-4));
+		bottom: 0;
+
+		li {
+			background: var(--white);
+		}
 	}
 }
 
