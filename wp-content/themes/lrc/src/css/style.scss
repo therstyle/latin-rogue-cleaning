@@ -152,7 +152,9 @@ header.main {
     display: block;
 		width: 100%;
     height: 550px;
-    background: url(../images/bg-clouds2.png) repeat-x;
+		background: url(../images/bg-clouds.svg) repeat-x;
+		background-size: 1009px 789px;
+		
     animation: clouds linear infinite 1000s;
     position: absolute;
 		top: 0;
