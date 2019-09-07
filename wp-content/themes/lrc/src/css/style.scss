@@ -92,10 +92,27 @@ h4 {
 
 .btn {
 	font-family: var(--headline);
-	font-size: 24px;
+	font-size: 20px;
 	border-radius: 10px;
 	display: inline-block;
 	text-transform: uppercase;
+	border: 1px solid var(--white);
+	padding: 10px 40px;
+	background: #e6700e;
+	background: #f3ae36;
+	background: -moz-linear-gradient(top,  #f3ae36 0%, #d84202 100%);
+	background: -webkit-linear-gradient(top,  #f3ae36 0%,#d84202 100%);
+	background: linear-gradient(to bottom,  #f3ae36 0%,#d84202 100%);
+	color: var(--white);
+}
+
+.btn,
+input[type="submit"] {
+	transition: 0.3s all;
+
+	&:hover {
+		box-shadow: 0 0 20px rgba(0,0,0,0.33);
+	}
 }
 
 header.main {
@@ -164,17 +181,6 @@ header.main {
 	p {
 		font-size: 18px;
 		margin: 0 0 var(--space-2) 0;
-	}
-	
-	.btn {
-		border: 1px solid var(--white);
-		padding: 10px;
-		background: #e6700e;
-		background: #f3ae36;
-		background: -moz-linear-gradient(top,  #f3ae36 0%, #d84202 100%);
-		background: -webkit-linear-gradient(top,  #f3ae36 0%,#d84202 100%);
-		background: linear-gradient(to bottom,  #f3ae36 0%,#d84202 100%);
-		color: var(--white);
 	}
 }
 
@@ -309,6 +315,10 @@ header.main {
 	background: -webkit-linear-gradient(top,  rgba(71,23,0,1) 0%,rgba(121,72,0,1) 100%);
 	background: linear-gradient(to bottom,  rgba(71,23,0,1) 0%,rgba(121,72,0,1) 100%);
 	overflow: hidden;
+
+	.wrapper {
+		overflow: visible;
+	}
 	
 	article {
 		p {
@@ -344,6 +354,7 @@ header.main {
 .quote-right {
 	width: 100%;
 	max-width: 310px;
+	margin: auto;
 
 	.frm_fields_container {
 		display: flex;
@@ -370,12 +381,15 @@ header.main {
 		font-family: arial;
 		font-size: 18px;
 		color: #fff;
-		box-shadow: inset 0px 0px 32px rgba(0,0,0,0.5);
 		background: #4b2700;
 		display: block;
-		padding: 10px;
+		padding: 10px 15px;
 		clear: both;
 		outline: none;
+
+		&:not([type="submit"]) {
+			box-shadow: inset 0px 0px 32px rgba(0,0,0,0.5);
+		}
 	}
 
 	.state {
@@ -395,8 +409,9 @@ header.main {
 		border: 1px solid #f1b977;
 		padding: 10px;
 		background: #f1b977;
-		background-image: linear-gradient(top, #f1b977, #e9932e);
-		box-shadow: none;
+		background: -moz-linear-gradient(top,  rgba(241,185,119,1) 1%, rgba(233,147,46,1) 100%);
+		background: -webkit-linear-gradient(top,  rgba(241,185,119,1) 1%,rgba(233,147,46,1) 100%);
+		background: linear-gradient(to bottom,  rgba(241,185,119,1) 1%,rgba(233,147,46,1) 100%);
 		text-shadow: 1px 1px 0px #f5d19a;
 		color: #d63900;
     text-transform: capitalize;
