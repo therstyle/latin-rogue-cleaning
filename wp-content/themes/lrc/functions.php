@@ -13,7 +13,8 @@ function registerMenus() {
 }
 add_action('after_setup_theme', 'registerMenus');
 
-//ACF
+add_image_size('icon-sm', 64, 64, false);
+
 if(function_exists('acf_add_options_page')) {
   acf_add_options_page();
 }

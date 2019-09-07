@@ -9,10 +9,10 @@ $serviceText = get_sub_field('service_text');
     <header>
       <?php 
       if ($serviceImage) {
-        echo wp_get_attachment_image($serviceImage, 'full');
+        echo wp_get_attachment_image($serviceImage, 'icon-sm');
       }
       
-      elseif ($serviceHeadline) {
+      if ($serviceHeadline) {
         echo '<h3>'.$serviceHeadline.'</h3>';
       }
       ?> 

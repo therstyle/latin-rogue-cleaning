@@ -145,7 +145,7 @@
             "label": "Services",
             "name": "services",
             "type": "repeater",
-            "instructions": "I have used several cleaning companies for my offices but nobody is as reliable and consistent as Latin Rogue Cleaning Services. They are the best.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -173,7 +173,7 @@
                         "id": ""
                     },
                     "return_format": "id",
-                    "preview_size": "medium",
+                    "preview_size": "thumbnail",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -189,7 +189,7 @@
                     "name": "service_headline",
                     "type": "text",
                     "instructions": "",
-                    "required": "Jim Stevenson",
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "50",
@@ -357,5 +357,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567733417
+    "modified": 1567896843
 }
