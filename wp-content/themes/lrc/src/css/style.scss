@@ -12,6 +12,12 @@
 	}
 }
 
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
 body {
 	background: #45913f url(../images/bg-top.jpg) no-repeat center top;
 	color: var(--white);
@@ -303,17 +309,6 @@ header.main {
 	background: -webkit-linear-gradient(top,  rgba(71,23,0,1) 0%,rgba(121,72,0,1) 100%);
 	background: linear-gradient(to bottom,  rgba(71,23,0,1) 0%,rgba(121,72,0,1) 100%);
 	overflow: hidden;
-	position: relative;
-
-	// &:before {
-	// 	content: '';
-	// 	width: 100%;
-	// 	height: 50px;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	box-shadow: inset 0px 20px 20px rgba(0,0,0,0.50);
-	// }
 	
 	article {
 		p {
@@ -343,14 +338,25 @@ header.main {
 }
 
 .quote-left {
-	width: 630px;
-	margin: 0 var(--space-1-half) 0 0;
+	margin-right: var(--space-3);
 }
 
 .quote-right {
-	width: 310px;
-	overflow: hidden;
-	margin: 0 0 var(--space-2) 0;
+	width: 100%;
+	max-width: 310px;
+
+	.frm_fields_container {
+		display: flex;
+		flex-wrap: wrap;
+
+		> * {
+			width: 100%;
+
+			&:not(:last-child) {
+				margin-bottom: var(--space-1);
+			}
+		}
+	}
 
 	label {
 		display: none;
@@ -358,9 +364,9 @@ header.main {
 
 	input,
 	textarea {
+		width: 100%;
 		border-radius: 20px;
 		border: 1px solid #7c2500;
-		margin: 0 0 var(--space-1);
 		font-family: arial;
 		font-size: 18px;
 		color: #fff;
@@ -368,25 +374,21 @@ header.main {
 		background: #4b2700;
 		display: block;
 		padding: 10px;
-		width: 288px;
 		clear: both;
 		outline: none;
 	}
 
 	.state {
+		margin-right: var(--space-1);
+
 		input {
-      width: 128px;
-      margin: 0 var(--space-1) var(--space-1) 0;
       color: #ccc;
-      clear: both;
     }
 	}
 	
-	.zip {
-		input {
-      width: 128px;
-		  clear: none;
-    }
+	.zip,
+	.state {
+		width: calc(50% - (var(--space-1) / 2));
 	}
 	
 	input[type="submit"] {
@@ -399,7 +401,6 @@ header.main {
 		color: #d63900;
     text-transform: capitalize;
     width: 100%;
-		max-width: 310px;
 		display: block;
 	}
 
@@ -407,6 +408,12 @@ header.main {
 		color: #CCC;
 		font-size: 12px;
 		clear: both;
+	}
+
+	small {
+		font-size: 14px;
+		text-align: center;
+		display: block;
 	}
 }
 
@@ -432,19 +439,17 @@ header.main {
 	position: absolute;
 }
 
-.sig-wrap {
-	width: 170px;
-	background: #563000;
-	padding: 10px;
-	border-radius: 10px 10px 0px 0px;
-	text-align: center;
-	clear: both;
-}
-
 .sig {
 	color: #FFF;
 	font-style: italic;
 	font-size: 10px;
+	width: 100%;
+	max-width: 170px;
+	background: #563000;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+	margin-top: var(--space-5);
 
 	img {
 		display: inline-block;
