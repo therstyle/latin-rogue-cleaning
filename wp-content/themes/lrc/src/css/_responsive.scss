@@ -80,3 +80,96 @@
 		margin-bottom: var(--space-4);
 	}
 }
+
+@media only screen and (max-width: $sm-tablet) {
+	body {
+		padding-top: calc(75px + var(--space-4));
+		background-position-y: -150px;
+	}
+
+	//TODO: hamburger menu
+	header.main {
+		margin: 0;
+		width: 100%;
+		padding: 12px 0;
+		background: var(--baby-blue);
+		position: fixed;
+		top: 0;
+
+		nav { //TEMP
+			display: none;
+		}
+	}
+
+	.logo {
+		width: 150px;
+	}
+
+	.top {
+		min-height: 450px;
+	}
+
+	.latinrogue {
+		transform: none;
+		min-width: 250px;
+	}
+
+	.top-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.about {
+		.wrapper {
+			flex-wrap: wrap;
+		}
+
+		h1 {
+			font-size: 48px;
+			line-height: 0.83;
+
+			small {
+				font-size: 36px;
+				line-height: inherit;
+			}
+		}
+	}
+
+	.about-left {
+		justify-content: center;
+		margin-right: 0;
+		margin-bottom: var(--space-2);
+	}
+
+	.services {
+		h1 {
+			font-size: 66px;
+		}
+	}
+
+	.bottom {
+		.wrapper {
+			flex-direction: column;
+		}
+
+		h1 {
+			font-size: 66px;
+			text-align: center;
+			//line-height: .83;
+
+			small {
+				line-height: initial;
+			}
+		}
+	}
+
+	.quote-left {
+		margin-right: 0;
+		margin-bottom: var(--space-2);
+	}
+}
+
+@media only screen and (max-width: $lg-phone) {
+	
+}
