@@ -224,6 +224,44 @@
             ]
         },
         {
+            "key": "field_5d7446b2fc9e3",
+            "label": "Call Text",
+            "name": "call_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d7446c8fc9e4",
+            "label": "Phone Number",
+            "name": "phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d71b593dc1cd",
             "label": "Quotes",
             "name": "quotes",
@@ -357,5 +395,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567896843
+    "modified": 1567901402
 }

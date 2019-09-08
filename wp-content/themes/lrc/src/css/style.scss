@@ -250,6 +250,7 @@ header.main {
 	
 	.wrapper {
 		flex-direction: column;
+		overflow: visible;
 
 		> article {
 			margin-bottom: var(--space-5);
@@ -259,13 +260,6 @@ header.main {
 	h1 {
 		font-size: 87px;
 		text-align: center;
-	}
-	
-	h2 {
-		font-size: 41px;
-		padding-left: 70px;
-		margin-bottom: 20px;
-		padding-top: 10px;
 	}
 }
 
@@ -298,18 +292,36 @@ header.main {
 
 .services-bottom {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .call {
-	background: url(../images/bg-call.png) no-repeat;
-	position: relative;
-	width: 519px;
-	height: 200px;
 	display: block;
-	left: -120px;
-	top: -70px;
-	text-indent: -99999px;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: url(../images/arrow.svg) no-repeat;
+		width: 90px;
+		height: 102px;
+		left: calc(-90px - var(--space-1));
+		top: -60px;
+	}
+
+	h2 {
+		font-size: 68px;
+		line-height: 1;
+
+		small {
+			text-transform: none;
+			display: block;
+			font-family: var(--script);
+			font-size: 34px;
+			word-spacing: 0.35em;
+		}
+	}
 }
 
 .quotes {

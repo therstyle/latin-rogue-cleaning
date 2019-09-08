@@ -1,7 +1,8 @@
 <?php
 $servicesHeadline = get_field('services_headline');
 $servicesText = get_field('services_text');
-$phone = get_field('phone');
+$callText = get_field('call_text'); 
+$phone = get_field('phone_number');
 ?>
 
 <a class="scroll-anchor" id="services"></a>
@@ -25,10 +26,15 @@ $phone = get_field('phone');
       </div>
     <?php endif; ?>
 
+    <a class="scroll-anchor" id="contact"></a>
     <div class="services-bottom">
-      <a class="scroll-anchor" id="contact"></a>
       <?php if($phone): ?>
-        <a class="call" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+        <a class="call" href="tel:<?php echo $phone; ?>">
+          <h2>
+            <small><?php echo $callText; ?></small>
+            <?php echo $phone; ?>
+          </h2>
+        </a>
       <?php endif; ?>
       
       <?php if(have_rows('quotes')):?>
