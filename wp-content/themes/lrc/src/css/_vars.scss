@@ -1,7 +1,12 @@
 //Breakpoints
 $full-hd: 1920px;
 $desktop: 1200px;
-$tablet: 768px;
+$lg-tablet: 1024px;
+$md-tablet: 992px;
+$sm-tablet: 768px;
+$lg-phone: 600px;
+$md-phone: 480px;
+$sm-phone: 320px;
 
 :root {
   //Fonts
@@ -29,4 +34,8 @@ $tablet: 768px;
   --space-6: calc(var(--space) * 6);
   --space-7: calc(var(--space) * 7);
   --space-8: calc(var(--space) * 8);
+
+  @media only screen and (max-width: $md-tablet) {
+    --max-width: 768px;
+  }
 }

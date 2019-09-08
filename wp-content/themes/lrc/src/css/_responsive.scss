@@ -5,247 +5,78 @@
 		background-size: contain !important;
 		background-position: 0 -15%;
 	}
+}
 
-	.about, 
-	.services {
-		background: none;
+@media only screen and (max-width: $lg-tablet) {
+	.call {
+		&:before {
+			position: static;
+			margin-right: var(--space-1);
+		}
 	}
 }
 
-//Responsive
-
-@media only screen and (max-device-width: 1200px) {
-	body {
-		font-size: 12px;
-		background: #45913f url(../images/bg-top-mobile.jpg) no-repeat center 30px;
-	}
-
-	.btn {
-		font-size: 18px;
+@media only screen and (max-width: $md-tablet) {
+	.wrapper {
+		width: 92%;
 	}
 
 	.top {
-		background-image: none;
-		min-height: 0;
-		animation: none;
+		max-width: $sm-tablet;
+		margin-left: auto;
+		margin-right: auto;
 
-		header {
-			width: 80%;
-			padding: 0 10% 0 10%;
-			margin-top: 55px;
+		.wrapper {
+			flex-direction: row;
 		}
 
-		h2 {
-			font-size: 21px;
-			line-height: 21px;
-			text-align: right; /* change for landscape */
-		}
-	
-		h1 {
-			font-size: 33px;
-			line-height: 24px;
-			text-align: right; /* change for landscape */
-		}
-	}
-
-	.logo {
-		width: 260px;
-		margin: 0 auto 20px auto;
-
-		img {
-			max-width:260px;
-		}
-	}
-
-	.latinrogue {
-		position: relative;
-		top: -10px;
-		left: -30px;
-	}
-
-	img.latinrogue {
-		max-height: 180px;
-	}
-
-	.top {
-		p {
-			margin-left: 70px;
-			text-align: right;
-			font-size: 14px;
-		}
-
-		a.btn {
-			clear: both;
-			display: block;
-		}
-	}
-
-	nav {
-		background:#9cd1eb;
-		margin: 0px;
-		padding: 5px 0 5px 0;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		z-index: 10;
-
-		ul {
-			display: table;
-			margin: 0 auto 0 auto;
-		}
-	
-		li {
-			text-align: center;
-			padding: 0 2.5% 0 2.5%;
-			width: 28%;
-			display: table-cell;
-		}
-	}
-
-	.about {
-		clear: both;
-		background: #46913f;
-		background-image: none;
-
-		section {
-			width: 80%;
-			padding: 0 10% 0 10%;
-		}
-	}
-
-	.about-left {
-		display: none;
-		width: auto;
-	}
-
-	.about {
-		h2 {
-			font-size: 24px;
-			line-height: 22px;
-			text-align: right;
+		.absolute {
+			position: static;
 		}
 
 		h1 {
-			font-size: 25px;
-			line-height: 19px;
-			text-align: right;
-		}
-	}
+			font-size: 66px;
+			line-height: .83;
 
-	.divider {
-		display: none;
+			small {
+				font-size: 36px;
+				line-height: inherit;
+			}
+		}
 	}
 
 	.services {
-		background: #46913f;
-		background-image: none;
+		max-width: $sm-tablet;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-		section {
-			width: 80%;
-			padding: 0 10% 0 10%;
-		}
+	.all-services {
+		flex-wrap: wrap;
 
-		h1 {
-			font-size: 36px;
-			clear: both;
-			text-align: center;
-			margin: 0 0 20px 0;
-		}
-	
-		h2 {
-			font-size: 30px;
-			text-align: center;
-			padding: 5px 0 0 50px;
+		> .service:not(:last-child) {
+			margin-bottom: var(--space-2);
 		}
 	}
 
-	.call-wrap {
-		.absolute {
-			width: auto !important;
-			height: auto !important;
-			position: static !important;
-			margin: auto !important;
+	.service {
+		width: 100%;
+
+		header {
+			flex-wrap: wrap;
+			justify-content: center;
 		}
+	}
+
+	.services-bottom {
+		flex-wrap: wrap;
+		max-width: 520px;
+		margin: auto;
+		justify-content: center;
 	}
 
 	.call {
-		font-family: 'Agenda-Bold', verdana, sans-serif;
-		background-image: none;
-		width: 100% !important;
-		height: auto !important;
-		margin: auto !important;
-		position: static !important;
-		font-size: 38px;
-		text-indent: 0px;
-		color: #FFF;
-		text-align: center !important;
-		position: static !important;
-		display: block !important;
-	}
-
-	.click {
-		display: none;
-	}
-
-	.quotes {
-		display: none;
-	}
-
-	.bottom {
-		h2 {
-			font-size: 24px;
-			line-height: 24px;
-		}
-	
-		h1 {
-			font-size: 36px;
-			line-height: 27px;
-			margin-bottom: 5px;
-		}
-
-		section {
-			width: 80%;
-			padding: 0 10% 0 10%;
-		}
-	}
-
-	.quote-left {
-		width: auto;
-		margin: 0px;
-	}
-
-	.quote-right {
-		width: auto;
-		margin: 0 0 20px 0;
-		text-align: center;
-
-		input, 
-		textarea {
-			width:100%;
-			padding:10px 10% 10px 10%;
-			-moz-box-sizing:border-box;
-			-webkit-box-sizing:border-box;
-			box-sizing:border-box;
-		}
-
-		.state input,
-		.zip input,
-		input[type="submit"] {
-			width: 100%;
-			padding: 10px 10% 10px 10%;
-		}
-
-		input[type="submit"] {
-			min-width: 0;
-		}
-	}
-
-	footer {
-		width: auto;
-	}
-
-	.sig-wrap {
-		margin-left: auto;
-		margin-right: auto;
+		transform: translateX(-25px);
+		margin-bottom: var(--space-4);
 	}
 }

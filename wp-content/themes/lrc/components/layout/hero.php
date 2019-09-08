@@ -10,7 +10,9 @@ $topText = get_field('top_text');
       <img src="<?php echo bloginfo('template_directory'); ?>/src/images/latinrogue.svg" class="latinrogue" alt="<?php echo bloginfo('name');?>">
     </div>
       
-    <?php echo $topHeadline; ?>
-    <?php echo $topText; ?>
+    <div class="top-content">
+      <?php echo $topHeadline; ?>
+      <?php echo $topText; ?>
+    </div>
   </section>
 </div>
