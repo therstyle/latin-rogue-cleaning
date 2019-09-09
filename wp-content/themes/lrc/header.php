@@ -29,6 +29,9 @@
           </a>
         <?php endif; ?>
 
+        <button class="nav-toggle">
+        </button>
+
         <?php 
           wp_nav_menu(array(
             'theme_location' => 'main',
