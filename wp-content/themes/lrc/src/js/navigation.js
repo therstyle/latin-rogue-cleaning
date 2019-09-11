@@ -3,6 +3,10 @@ class Navigation {
     this.selector = document.querySelector('header.main .nav-toggle');
   }
 
+  init() {
+    this.menuToggle();
+  }
+
   menuToggle() {
     console.log('init menu');
 
