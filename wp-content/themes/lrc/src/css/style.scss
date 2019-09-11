@@ -149,7 +149,64 @@ header.main {
 }
 
 .nav-toggle {
-  display: none;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background: none;
+	border: none;
+	padding: 0;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	&:hover {
+		cursor: pointer;
+	}
+	
+	span {
+		height: 3px;
+		width: 100%;
+		background: var(--white);
+		display: block;
+		transition: 0.3s all;
+
+		&:nth-child(2) {
+			position: relative;
+
+			&:after {
+				content: '';
+				opacity: 0;
+				width: 100%;
+				height: 3px;
+				background: var(--white);
+				display: block;
+			}
+		}
+	}
+}
+
+.menu-open {
+	.nav-toggle {
+		span {
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				opacity: 0;
+			}
+
+			&:nth-child(2) {
+				transform: rotate(45deg);
+
+				&:after {
+					transform: rotate(90deg);
+					opacity: 1;
+				}
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+				opacity: 0;
+			}
+		}
+	}
 }
 
 .top {

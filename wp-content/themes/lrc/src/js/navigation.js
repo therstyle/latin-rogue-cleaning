@@ -8,11 +8,8 @@ class Navigation {
   }
 
   menuToggle() {
-    console.log('init menu');
-
     this.selector.addEventListener('click', function() {
-      console.log('clicked');
-      this.classList.toggle('menu-open');
+      document.querySelector('body').classList.toggle('menu-open');
     });
   }
 }

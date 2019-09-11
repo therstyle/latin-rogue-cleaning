@@ -29,8 +29,11 @@
           </a>
         <?php endif; ?>
 
-        <button class="nav-toggle">
-        </button>
+        <a class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
         <?php 
           wp_nav_menu(array(
