@@ -10,6 +10,7 @@ class SmoothScroll {
       left: 0,
       top: selector.offsetTop
     });
+    document.querySelector('body').classList.remove('menu-open');
   }
 
   init() {
