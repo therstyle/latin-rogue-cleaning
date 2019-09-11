@@ -6,7 +6,7 @@ $md-tablet: 992px;
 $sm-tablet: 768px;
 $lg-phone: 600px;
 $md-phone: 480px;
-$sm-phone: 320px;
+$sm-phone: 400px;
 
 :root {
   //Fonts
@@ -20,9 +20,10 @@ $sm-phone: 320px;
   --shadow-color: rgba(0,0,0,0.4);
   --dark-green: #398234;
   --neon-green: #8aff7d;
-  --baby-blue: rgb(156,209,235, 0.66);
+  --baby-blue: rgb(156,209,235, 0.9);
 
   //Spacing
+  --font-size: 16px;
   --max-width: 960px;
   --space: 16px;
   --space-half: calc(var(--space) / 2);
@@ -38,5 +39,13 @@ $sm-phone: 320px;
 
   @media only screen and (max-width: $md-tablet) {
     --max-width: 768px;
+  }
+
+  @media only screen and (max-width: $lg-phone) {
+    --space: 12px;
+  }
+
+  @media only screen and (max-width: $sm-phone) {
+    --font-size: 14px;
   }
 }

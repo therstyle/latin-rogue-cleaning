@@ -23,7 +23,7 @@ body {
 	background: #0594ce url(../images/bg-top.png) no-repeat center top;
 	background-size: 1919px 789px;
 	color: var(--white);
-	font-size: 16px;
+	font-size: var(--font-size);
 	font-family: var(--main);
 	text-shadow: 1px 1px 0px var(--shadow-color);
 	line-height: 1.3;

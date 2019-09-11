@@ -172,17 +172,19 @@
 
 @media only screen and (max-width: $lg-phone) {
 	body {
-		background-position-y: -290px;
+		background-position-y: -270px;
+		background-color: #45913f;
 	}
 
 	.top {
-		// .wrapper {
-		// 	flex-wrap: wrap;
-		// 	flex-direction: column-reverse;
-		// }
+		min-height: 320px;
 
 		&:before {
 			top: -160px;
+		}
+
+		.wrapper {
+			flex-direction: column;
 		}
 
 		h1 {
@@ -193,6 +195,10 @@
 				font-size: 22px;
 			}
 		}
+	}
+
+	.absolute {
+		margin-bottom: var(--space-2);
 	}
 
 	.latinrogue {
@@ -218,6 +224,46 @@
 
 		h3 {
 			font-size: 24px;
+		}
+	}
+
+	.call {
+		align-items: center;
+
+		h2 {
+			font-size: 40px;
+		}
+	}
+
+	.bottom {
+		h1 {
+			font-size: 36px;
+
+			small {
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $sm-phone) {
+	.top p {
+		font-size: inherit;
+	}
+
+	.call {
+		&:before {
+			width: 45px;
+			height: 56px;
+			background-size: 45px 56px;
+		}
+
+		h2 {
+			font-size: 32px;
+
+			small {
+				font-size: 22px;
+			}
 		}
 	}
 }
