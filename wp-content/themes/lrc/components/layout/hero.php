@@ -3,7 +3,6 @@ $topHeadline = get_field('top_headline');
 $topText = get_field('top_text');
 ?>
 
-<a class="scroll-anchor" id="top"></a>
 <div class="top">  
   <section class="wrapper">
     <div class="absolute">

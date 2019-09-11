@@ -17,6 +17,7 @@
   ?>
 
   <body <?php body_class(); ?>>
+    <a class="scroll-anchor" id="top"></a>
     <div class="opl">
       <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank"></a>
     </div>
@@ -24,7 +25,7 @@
     <header class="main">
       <div class="wrapper">
         <?php if($logo): ?>
-          <a class="logo" href="<?php echo home_url(); ?>">
+          <a class="logo" href="#top">
             <?php echo wp_get_attachment_image($logo, 'full'); ?>
           </a>
         <?php endif; ?>
