@@ -16,8 +16,7 @@
   $logo = get_field('logo', 'option');
   ?>
 
-  <body <?php body_class(); ?>>
-    <a class="scroll-anchor" id="top"></a>
+  <body id="top" <?php body_class(); ?>>
     <div class="opl">
       <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank"></a>
     </div>

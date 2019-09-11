@@ -1,8 +1,6 @@
 class SmoothScroll {
   constructor() {
     this.links = document.querySelectorAll('header.main .menu > li > a, .logo');
-
-    //TODO: update to scroll to 0 for #top
   }
 
   scroll(element) {
