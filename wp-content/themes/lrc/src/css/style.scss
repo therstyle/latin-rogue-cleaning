@@ -598,15 +598,15 @@ background: linear-gradient(to right, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%
 }
 
 ::-webkit-input-placeholder {
-    color:#7c2500;
+    color: var(--white);
 }
 
 :-moz-placeholder {
-    color:#7c2500;
+    color: var(--white);
 }
 
 .hasPlaceholder {
-    color:#7c2500;
+    color: var(--white);
 }
 
 .absolute {
