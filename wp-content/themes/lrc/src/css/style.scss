@@ -38,6 +38,10 @@ a:visited {
 p {
 	margin-bottom: var(--space-1);
 
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	&.more {
 		font-weight: bold;
 		text-align: right;
@@ -316,7 +320,7 @@ header.main {
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: var(--space-5);
-	padding-top: 44px;
+	padding-top: var(--space-5);
 	position: relative;
 	
 	.wrapper {
@@ -334,8 +338,8 @@ header.main {
 			height: 7px;
 			filter: blur(2px);
 			background: -moz-linear-gradient(left, rgba(57,145,50,0) 0%, rgba(57,145,50,1) 50%, rgba(57,145,50,0) 100%);
-background: -webkit-linear-gradient(left, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%,rgba(57,145,50,0) 100%);
-background: linear-gradient(to right, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%,rgba(57,145,50,0) 100%);
+			background: -webkit-linear-gradient(left, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%,rgba(57,145,50,0) 100%);
+			background: linear-gradient(to right, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%,rgba(57,145,50,0) 100%);
 		}
 	
 		&:after {
@@ -525,6 +529,25 @@ background: linear-gradient(to right, rgba(57,145,50,0) 0%,rgba(57,145,50,1) 50%
 			&:not(:last-child) {
 				margin-bottom: var(--space-1);
 			}
+		}
+	}
+
+	.frm_message,
+	.frm_error_style {
+		margin-bottom: var(--space-2);
+	}
+
+	.frm_form_fields {
+		.frm_error_style {
+			margin-bottom: var(--space-1);
+		}
+	
+		.frm_error {
+			width: 100%;
+			color: lighten(#7c2500, 10%);
+			font-size: 12px;
+			text-align: right;
+			margin-top: 4px;
 		}
 	}
 
