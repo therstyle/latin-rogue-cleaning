@@ -90,13 +90,15 @@
 	header.main {
 		margin: 0;
 		width: 100%;
-		padding: 12px 0;
+		padding: 0;
 		background: var(--baby-blue);
 		position: fixed;
 		top: 0;
 
 		.wrapper {
 			flex-wrap: wrap;
+			margin: 0;
+			width: 100%;
 		}
 
 		nav {
@@ -105,13 +107,17 @@
 
 			.menu {
 				flex-direction: column;
-				margin-top: var(--space-1);
 				padding-top: var(--space-1);
-				border-top: 1px solid rgba(255,255,255,0.75);
+				border-top: 1px solid var(--alpha-white);
 				width: 100%;
 
 				li {
 					margin: 0 0 var(--space-1);
+
+					> a {
+						padding: 0 4%;
+						display: block;
+					}
 				}
 			}
 		}
@@ -127,10 +133,12 @@
 
 	.logo {
 		width: 150px;
+		margin-left: 4%;
 	}
 
 	.nav-toggle {
 		display: flex;
+		//margin-right: 4%;
 	}
 
 	.top {
@@ -275,6 +283,15 @@
 }
 
 @media only screen and (max-width: $sm-phone) {
+	.logo {
+		width: 120px;
+	}
+
+	.nav-toggle {
+		width: 54px;
+		height: 54px;
+	}
+
 	.top p {
 		font-size: inherit;
 	}

@@ -151,16 +151,24 @@ header.main {
 
 .nav-toggle {
 	display: none;
-	width: 32px;
-	height: 32px;
+	width: 74px;
+	height: 74px;
 	background: none;
 	border: none;
-	padding: 6px;
-	flex-wrap: wrap;
-	align-content: space-between;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid var(--alpha-white);
 
 	&:hover {
 		cursor: pointer;
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
 	}
 	
 	span {

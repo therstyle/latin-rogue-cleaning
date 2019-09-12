@@ -30,9 +30,11 @@
         <?php endif; ?>
 
         <a class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </a>
 
         <?php 
