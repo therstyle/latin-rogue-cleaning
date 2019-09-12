@@ -1,27 +1,21 @@
 <?php
-
-//CUSTOM EXCERPT MESSAGE
-function new_excerpt_more($more) {
-	return '...
-	
-	<p class="more"><a href="'.get_permalink($post->ID).'">Read Full Article</a></p>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
-//ENABLE MENU SUPPORT
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
-//ENABLE POST THUMBNAILS
-add_theme_support( 'post-thumbnails' );
+function loadAssets() {
+	wp_enqueue_style('style', get_stylesheet_directory_uri().'/dist/style.css', '', '1.0', 'all');
+	wp_enqueue_script('general', get_stylesheet_directory_uri().'/dist/index.js', '', '', true);
+}
+add_action('wp_enqueue_scripts', 'loadAssets');
 
-//DISABLE ADMIN BAR
-add_filter('show_admin_bar', '__return_false');
+function registerMenus() {
+  register_nav_menu('main', 'Main Menu');
+}
+add_action('after_setup_theme', 'registerMenus');
 
-function html5blank_styles()
-	{
-	wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-	wp_enqueue_style('html5blank'); // Enqueue it!
-	}
-	
-add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
+add_image_size('icon-sm', 64, 64, false);
+
+if(function_exists('acf_add_options_page')) {
+  acf_add_options_page();
+}
 ?>
