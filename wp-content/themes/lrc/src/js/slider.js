@@ -10,7 +10,6 @@ class Slider {
   }
 
   init() {
-    console.log('init slider');
     new Flickity(this.selector, this.options);
   }
 }

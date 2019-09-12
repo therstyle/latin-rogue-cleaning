@@ -1,13 +1,16 @@
 import SmoothScroll from './smoothscroll';
 import Slider from './slider';
 import Navigation from './navigation';
+import ScrollDirection from './scrolldirection';
 
 const functions = {
   ready() {
-    console.log('init');
     SmoothScroll.init();
     Slider.init();
     Navigation.init();
+  },
+  scroll() {
+    ScrollDirection.init();
   }
 }
 
