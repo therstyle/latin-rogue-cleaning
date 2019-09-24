@@ -30,4 +30,11 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public function getLogo()
+    {
+        if(get_field('logo', 'option')) {
+            return get_field('logo', 'option');
+        }
+    }
 }
