@@ -1,9 +1,13 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+<div class="opl">
+  <a href="http://onepagelove.com/latin-rogue-cleaning-services" target="_blank"></a>
+</div>
+
+<header class="main">
+  <div class="wrapper">
+    <a class="logo" href="{{ home_url('/#top') }}"></a>
     <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+      @if (has_nav_menu('main'))
+        {!! wp_nav_menu(['theme_location' => 'main', 'container' => 'nav']) !!}
       @endif
     </nav>
   </div>
