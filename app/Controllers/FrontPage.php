@@ -40,4 +40,32 @@ class FrontPage extends Controller
             return $about_text;
           }
     }
+
+    public function services_headline() {
+        $services_headline = get_field('services_headline');
+        if ($services_headline) {
+            return $services_headline;
+        }
+    }
+
+    public function services_text() {
+        $services_text = get_field('services_text');
+        if ($services_text) {
+            return $services_text;
+        }
+    }
+
+    public function call_text() {
+        $callText = get_field('call_text');
+        if ($callText) {
+            return $callText;
+        }
+    }
+
+    public function phone() {
+        $phone = get_field('phone_number');
+        if ($phone) {
+            return $phone;
+        }
+    }
 }
