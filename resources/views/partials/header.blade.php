@@ -4,7 +4,7 @@
 
 <header class="main">
   <div class="wrapper">
-  <a class="logo" href="{{ home_url('/#top') }}">{!! wp_get_attachment_image($get_logo) !!}</a>
+  <a class="logo" href="{{ home_url('/#top') }}">{!! $logo !!}</a>
     <nav class="nav-primary">
       @if (has_nav_menu('main'))
         {!! wp_nav_menu(['theme_location' => 'main', 'container' => 'nav']) !!}

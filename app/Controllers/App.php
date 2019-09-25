@@ -31,10 +31,11 @@ class App extends Controller
         return get_the_title();
     }
 
-    public function getLogo()
+    public function logo()
     {
-        if(get_field('logo', 'option')) {
-            return get_field('logo', 'option');
+        $logo = get_field('logo', 'option');
+        if($logo) {
+            return wp_get_attachment_image($logo);
         }
     }
 }
