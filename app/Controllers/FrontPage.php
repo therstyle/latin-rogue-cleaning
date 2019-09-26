@@ -103,4 +103,8 @@ class FrontPage extends Controller
             return $quote_name;
         }
     }
+
+    // $contactHeadline = get_field('contact_headline');
+    // $contactText = get_field('contact_text');
+    // $contactForm = get_field('contact_form');
 }
