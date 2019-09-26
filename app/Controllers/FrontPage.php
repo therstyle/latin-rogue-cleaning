@@ -68,4 +68,25 @@ class FrontPage extends Controller
             return $phone;
         }
     }
+
+    public static function service_headline() {
+        $service_headline = get_sub_field('service_headline');
+        if($service_headline) {
+            return $service_headline;
+        }
+    }
+
+    public static function service_image() {
+        $service_image = get_sub_field('service_image');
+        if($service_image) {
+            return wp_get_attachment_image($service_image, 'icon-sm');
+        }
+    }
+
+    public static function service_text() {
+        $service_text = get_sub_field('service_text');
+        if($service_text) {
+            return $service_text;
+        }
+    }
 }

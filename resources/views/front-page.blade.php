@@ -13,7 +13,6 @@
       <div class="top-content">
         {!! $top_headline !!}
         {!! $top_text !!}
-        <?php echo $topText; ?>
       </div>
     </section>
   </div>
@@ -53,13 +52,18 @@
           {!! $services_text !!}
         </article>
 
-        {{-- <?php if(have_rows('services')): ?>
+        @if(have_rows('services'))
           <div class="all-services">
-            <?php while(have_rows('services')): the_row(); ?>
-              <?php get_template_part('components/layout/service'); ?>
-            <?php endwhile; ?>
+            @while(have_rows('services')) @php the_row() @endphp
+              @component('components.service', [
+                'service_headline' => FrontPage::service_headline(),
+                'service_image' => FrontPage::service_image(),
+                'service_text' => FrontPage::service_text()
+              ])
+              @endcomponent
+            @endwhile
           </div>
-        <?php endif; ?> --}}
+        @endif
 
         <a class="scroll-anchor" id="contact"></a>
         <div class="services-bottom">
@@ -72,13 +76,13 @@
             </a>
           @endif
 
-          {{-- <?php if(have_rows('quotes')):?>
+          @if(have_rows('quotes'))
               <div class="quotes">
-                <?php while(have_rows('quotes')): the_row(); ?>
-                  <?php get_template_part('components/layout/quote'); ?>
-                <?php endwhile; ?>
+                @while(have_rows('quotes')) @php the_row() @endphp
+                  <?php //get_template_part('components/layout/quote'); ?>
+                @endwhile
               </div>
-          <?php endif; ?> --}}
+          @endif
         </div>
       </section>
     </div>
