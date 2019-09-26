@@ -79,7 +79,11 @@
           @if(have_rows('quotes'))
               <div class="quotes">
                 @while(have_rows('quotes')) @php the_row() @endphp
-                  <?php //get_template_part('components/layout/quote'); ?>
+                  @component('components.quote', [
+                    'quote' => FrontPage::quote(),
+                    'quote_name' => FrontPage::quote_name()
+                  ])
+                  @endcomponent
                 @endwhile
               </div>
           @endif
@@ -87,4 +91,6 @@
       </section>
     </div>
   </div>
+
+
 @endsection

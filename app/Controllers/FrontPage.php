@@ -89,4 +89,18 @@ class FrontPage extends Controller
             return $service_text;
         }
     }
+
+    public static function quote() {
+        $quote = get_sub_field('quote_text');
+        if($quote) {
+            return $quote;
+        }
+    }
+
+    public static function quote_name() {
+        $quote_name = get_sub_field('quote_name');
+        if($quote_name) {
+            return $quote_name;
+        }
+    }
 }
