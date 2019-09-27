@@ -80,8 +80,8 @@
               <div class="quotes">
                 @while(have_rows('quotes')) @php the_row() @endphp
                   @component('components.quote', [
-                    'quote' => FrontPage::quote(),
-                    'quote_name' => FrontPage::quote_name()
+                    'quote' => FrontPage::quote['text'],
+                    'quote_name' => FrontPage::quote['name']
                   ])
                   @endcomponent
                 @endwhile

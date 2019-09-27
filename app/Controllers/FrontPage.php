@@ -91,17 +91,11 @@ class FrontPage extends Controller
     }
 
     public static function quote() {
-        $quote = get_sub_field('quote_text');
-        if($quote) {
-            return $quote;
-        }
-    }
-
-    public static function quote_name() {
-        $quote_name = get_sub_field('quote_name');
-        if($quote_name) {
-            return $quote_name;
-        }
+        $quote = [
+            'text' => get_sub_field('quote_text'),
+            'name' => get_sub_field('quote_name')
+        ];
+        return $quote;
     }
 
     public function contact() {
