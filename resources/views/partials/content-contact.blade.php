@@ -1,19 +1,19 @@
 <section class="wrapper">
   <article class="quote-left">
-    @if($contact_headline)
+    @if($contact['headline'])
       <header>
-        {!! $contact_headline !!}
+        {!! $contact['headline'] !!}
       </header>
     @endif
 
-    @if($contact_text)
-      {!! $contact_text !!}
+    @if($contact['text'])
+      {!! $contact['text'] !!}
     @endif
   </article>
 
   <div class="quote-right">
-    @if($contact_form)
-      {!! $contact_form !!}
+    @if($contact['form'])
+      {!! $contact['form'] !!}
     @endif
   </div>
 </section>

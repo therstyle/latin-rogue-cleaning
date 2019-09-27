@@ -104,24 +104,12 @@ class FrontPage extends Controller
         }
     }
 
-    public function contact_headline() {
-        $contact_headline = get_field('contact_headline');
-        if($contact_headline) {
-            return $contact_headline;
-        }
-    }
-
-    public function contact_text() {
-        $contact_text = get_field('contact_text');
-        if($contact_text) {
-            return $contact_text;
-        }
-    }
-
-    public function contact_form() {
-        $contact_form = get_field('contact_form');
-        if($contact_form) {
-            return $contact_form;
-        }
+    public function contact() {
+        $contact = [
+            'headline' => get_field('contact_headline'),
+            'text' => get_field('contact_text'),
+            'form' => get_field('contact_form')
+        ];
+        return $contact;
     }
 }
