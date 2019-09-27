@@ -93,27 +93,8 @@
   </div>
 
   <a class="scroll-anchor" id="quote"></a>
-  <div class="bottom">
-    <div class="dirt">
-      <section class="wrapper">
-        <article class="quote-left">
-          @if($contact_headline)
-            <header>
-              {{ $contact_headline }}
-            </header>
-          @endif
+@endsection
 
-          @if($contact_text)
-            {{ $contact_text }}
-          @endif
-        </article>
-
-        <div class="quote-right">
-          @if($contact_form)
-            {!! $contact_form !!}
-          @endif
-        </div>
-      </section>
-    </div>
-  </div>
+@section('content-contact')
+  @include('partials.content-contact')
 @endsection
