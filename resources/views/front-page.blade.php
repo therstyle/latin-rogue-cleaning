@@ -11,8 +11,8 @@
       </div>
 
       <div class="top-content">
-        {!! $top_headline !!}
-        {!! $top_text !!}
+        {!! $top['headline'] !!}
+        {!! $top['text'] !!}
       </div>
     </section>
   </div>
@@ -22,18 +22,18 @@
     <div class="about">
       <section class="wrapper">
         <div class="about-left">
-          {!! $about_image !!}
+          {!! $about['image'] !!}
         </div>
 
         <div class="about-right">
           <article>
-            @if ($about_headline)
+            @if ($about['headline'])
               <header>
-                {!! $about_headline !!}
+                {!! $about['headline'] !!}
               </header>
             @endif
 
-            {!! $about_text !!}
+            {!! $about['text'] !!}
           </article>
         </div>
       </section>
@@ -43,22 +43,20 @@
     <div class="services">
       <section class="wrapper">
         <article>
-          @if ($services_headline)
+          @if ($services['headline'])
             <header>
-              {!! $services_headline !!}
+              {!! $services['headline'] !!}
             </header>
           @endif
 
-          {!! $services_text !!}
+          {!! $services['text'] !!}
         </article>
 
         @if(have_rows('services'))
           <div class="all-services">
             @while(have_rows('services')) @php the_row() @endphp
               @component('components.service', [
-                'service_headline' => FrontPage::service_headline(),
-                'service_image' => FrontPage::service_image(),
-                'service_text' => FrontPage::service_text()
+                'service' => FrontPage::service()
               ])
               @endcomponent
             @endwhile
@@ -68,10 +66,10 @@
         <a class="scroll-anchor" id="contact"></a>
         <div class="services-bottom">
           @if($phone)
-            <a class="call" href="tel:{!! $phone !!}">
+            <a class="call" href="tel:{!! $phone['number'] !!}">
               <h2>
-                <small>{!! $call_text !!}</small>
-                {!! $phone !!}
+                <small>{!! $phone['text'] !!}</small>
+                {!! $phone['number'] !!}
               </h2>
             </a>
           @endif
@@ -80,8 +78,7 @@
               <div class="quotes">
                 @while(have_rows('quotes')) @php the_row() @endphp
                   @component('components.quote', [
-                    'quote' => FrontPage::quote['text'],
-                    'quote_name' => FrontPage::quote['name']
+                    'quote' => FrontPage::quote()
                   ])
                   @endcomponent
                 @endwhile

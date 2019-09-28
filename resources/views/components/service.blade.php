@@ -1,17 +1,17 @@
 <article class="service">
-  @if($service_headline || $service_image)
+  @if($service['headline'] || $service['image'])
     <header>
-      @if($service_image)
-        {!! $service_image !!}
+      @if($service['image'])
+        {!! $service['image'] !!}
       @endif
 
-      @if($service_headline)
-        <h3>{!! $service_headline !!}</h3>
+      @if($service['headline'])
+        <h3>{!! $service['headline'] !!}</h3>
       @endif
     </header>
 
-    @if($service_text)
-      {!! $service_text !!}
+    @if($service['text'])
+      {!! $service['text'] !!}
     @endif
   @endif
 </article>

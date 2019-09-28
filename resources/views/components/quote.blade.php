@@ -1,10 +1,10 @@
 @if($quote)
   <div>
-    {!! $quote !!}
+    {!! $quote['text'] !!}
 
-    @if($quote_name)
+    @if($quote['name'])
       <p class="quote-name">
-        {{ $quote_name }}
+        {{ $quote['name'] }}
       </p>
     @endif
   </div>
