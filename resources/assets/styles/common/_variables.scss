@@ -11,18 +11,18 @@ $spacer: 16px;
 
 :root {
   //Fonts
-  --main: 'Agenda-Medium', verdana, sans-serif;
-  --headline: 'Agenda-Bold', verdana, sans-serif;
-  --script: 'Cuisine', script;
+  --main: "Agenda-Medium", verdana, sans-serif;
+  --headline: "Agenda-Bold", verdana, sans-serif;
+  --script: "Cuisine", script;
 
   //Colors
-  --white: #FFF;
+  --white: #fff;
   --black: #000;
-  --shadow-color: rgba(0,0,0,0.4);
+  --shadow-color: rgba(0, 0, 0, 0.4);
   --dark-green: #398234;
   --neon-green: #8aff7d;
-  --baby-blue: rgb(156,209,235, 0.9);
-  --alpha-white: rgba(255,255,255,0.75);
+  --baby-blue: rgb(156, 209, 235, 0.9);
+  --alpha-white: rgba(255, 255, 255, 0.75);
 
   //Spacing
   --font-size: 16px;
