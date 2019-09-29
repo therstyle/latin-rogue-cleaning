@@ -1,6 +1,6 @@
 class SmoothScroll {
-  constructor() {
-    this.links = document.querySelectorAll('header.main .menu > li > a, .logo');
+  constructor(selector) {
+    this.links = document.querySelectorAll(selector);
   }
 
   scroll(element) {
@@ -27,4 +27,4 @@ class SmoothScroll {
   }
 }
 
-export default new SmoothScroll();
+export default new SmoothScroll('header.main .menu > li > a, .logo');

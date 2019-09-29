@@ -1,8 +1,8 @@
 import Flickity from 'flickity';
 
 class Slider {
-  constructor() {
-    this.selector = document.querySelector('.quotes');
+  constructor(selector) {
+    this.selector = document.querySelector(selector);
     this.options = {
       autoPlay: 5000,
       prevNextButtons: false,
@@ -14,4 +14,4 @@ class Slider {
   }
 }
 
-export default new Slider();
+export default new Slider('.quotes');

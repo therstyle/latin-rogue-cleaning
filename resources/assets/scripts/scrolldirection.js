@@ -1,6 +1,6 @@
 class ScrollDirection {
-  constructor() {
-    this.selector = document.querySelector('body');
+  constructor(selector) {
+    this.selector = document.querySelector(selector);
     this.lastPosition = 0;
   }
 
@@ -20,4 +20,4 @@ class ScrollDirection {
   }
 }
 
-export default new ScrollDirection();
+export default new ScrollDirection('body');

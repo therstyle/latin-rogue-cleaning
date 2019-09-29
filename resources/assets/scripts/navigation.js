@@ -1,6 +1,6 @@
 class Navigation {
-  constructor() {
-    this.selector = document.querySelector('header.main .nav-toggle');
+  constructor(selector) {
+    this.selector = document.querySelector(selector);
   }
 
   init() {
@@ -14,4 +14,4 @@ class Navigation {
   }
 }
 
-export default new Navigation();
+export default new Navigation('header.main .nav-toggle');
