@@ -22,3 +22,7 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+
+window.addEventListener('scroll', () => {
+  common.scroll();
+});
