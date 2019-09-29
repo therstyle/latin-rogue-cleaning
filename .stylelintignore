@@ -1,1 +1,2 @@
-resources/assets/styles/*
+resources/assets/styles/common/_reset.scss
+resources/assets/styles/common/_flickity.scss
