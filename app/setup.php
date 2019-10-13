@@ -19,6 +19,24 @@ add_action('wp_enqueue_scripts', function () {
     }
 }, 100);
 
+// Login Logo & Link
+add_action( 'login_enqueue_scripts', function() {
+    echo '<style type="text/css">
+    #login h1 a, .login h1 a {
+        background-image: url('.asset_path('images/rstyle-design-logo.svg').');
+    height:100px;
+    width:300px;
+    background-size: 310px 64px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    }
+</style>';
+});
+
+add_filter( 'login_headerurl', function() {
+    return 'https://rstyledesign.com';
+});
+
 /**
  * Theme setup
  */
@@ -130,3 +148,4 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+

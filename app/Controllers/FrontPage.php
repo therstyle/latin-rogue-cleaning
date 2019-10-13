@@ -60,7 +60,7 @@ class FrontPage extends Controller
         $contact = [
             'headline' => get_field('contact_headline'),
             'text' => get_field('contact_text'),
-            'form' => get_field('contact_form')
+            'form_id' => '[formidable id='.get_field('form_id').']'
         ];
         return $contact;
     }
