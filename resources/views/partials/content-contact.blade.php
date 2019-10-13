@@ -12,8 +12,8 @@
   </article>
 
   <div class="quote-right">
-    @if($contact['form'])
-      {!! $contact['form'] !!}
+    @if($contact['form_id'])
+      @php echo do_shortcode($contact['form_id']); @endphp
     @endif
   </div>
 </section>
