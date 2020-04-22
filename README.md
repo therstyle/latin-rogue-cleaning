@@ -1,6 +1,6 @@
 # [Latin Rogue Cleaning](https://latinroguecleaning.com)
 
-Latin Rogue Cleaning is built with [Sage](https://roots.io/sage/).
+Latin Rogue Cleaning is a WordPress theme built with [Sage](https://roots.io/sage/).
 
 <p align="center">
   <img src="https://chrisrobertsweb.dev/github/latin-rogue-cleaning.jpg">
