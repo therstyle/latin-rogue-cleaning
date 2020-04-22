@@ -1,9 +1,6 @@
 # [Latin Rogue Cleaning](https://latinroguecleaning.com)
-[![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
-[![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
-[![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
 
-Latin Rogue Cleaning is built with Sage, a WordPress starter theme with a modern development workflow.
+Latin Rogue Cleaning is built with [Sage](https://roots.io/sage/).
 
 <p align="center">
   <img src="https://chrisrobertsweb.dev/github/latin-rogue-cleaning.jpg">
@@ -19,7 +16,7 @@ Make sure all dependencies have been installed before moving on:
 * [Node.js](http://nodejs.org/) >= 8.0.0
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Theme installation
+## Installation & Set Up
 
 Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 
