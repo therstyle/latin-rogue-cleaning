@@ -5,17 +5,9 @@
 
 Latin Rogue Cleaning is built with Sage, a WordPress starter theme with a modern development workflow.
 
-## Features
-
-* Sass for stylesheets
-* Modern JavaScript
-* [Webpack](https://webpack.github.io/) for compiling assets, optimizing images, and concatenating and minifying files
-* [Browsersync](http://www.browsersync.io/) for synchronized browser testing
-* [Blade](https://laravel.com/docs/5.6/blade) as a templating engine
-* [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
-* CSS framework (optional): [Bootstrap 4](https://getbootstrap.com/), [Bulma](https://bulma.io/), [Foundation](https://foundation.zurb.com/), [Tachyons](http://tachyons.io/), [Tailwind](https://tailwindcss.com/)
-
-See a working example at [roots-example-project.com](https://roots-example-project.com/).
+<p align="center">
+  <img src="https://chrisrobertsweb.dev/github/latin-rogue-cleaning.jpg">
+</p>
 
 ## Requirements
 
