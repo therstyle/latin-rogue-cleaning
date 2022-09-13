@@ -3,7 +3,7 @@
 Latin Rogue Cleaning is a WordPress theme built with [Sage](https://roots.io/sage/).
 
 <p align="center">
-  <img src="https://chrisrobertsweb.dev/github/latin-rogue-cleaning.jpg">
+  <img src="https://assets.chrisrobertsweb.dev/github/latin-rogue-cleaning.webp">
 </p>
 
 ## Requirements
